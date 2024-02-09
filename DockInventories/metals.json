@@ -1,0 +1,12 @@
+{
+    "metals": [
+        {
+            "name": "Iron Oak",
+            "rarity": "Common",
+            "price": {
+                "min": 100,
+                "max": 200
+            }
+        }
+    ]
+}

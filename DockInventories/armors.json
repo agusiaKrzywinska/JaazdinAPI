@@ -1,0 +1,9 @@
+{
+    "armors": [
+        {
+            "name": "Breastplate",
+            "plates": 2,
+            "price": 400
+        }
+    ]
+}
