@@ -1,11 +1,427 @@
 {
     "metals": [
         {
-            "name": "Iron Oak",
+            "name": "Test",
             "rarity": "Common",
             "price": {
                 "min": 100,
                 "max": 200
+            }
+        },
+        {
+            "name": "Githyanki Silver",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 230,
+                "max": 270
+            }
+        },
+        {
+            "name": "Mithral",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 220
+            }
+        },
+        {
+            "name": "Black Iron",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 220
+            }
+        },
+        {
+            "name": "Ironoak",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 140,
+                "max": 180
+            }
+        },
+        {
+            "name": "Razorwood",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 225,
+                "max": 260
+            }
+        },
+        {
+            "name": "Dragon's Gold",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 225
+            }
+        },
+        {
+            "name": "Gorgonite",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 175,
+                "max": 225
+            }
+        },
+        {
+            "name": "Tinker's Brass",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 165,
+                "max": 195
+            }
+        },
+        {
+            "name": "Chromed Silk",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 210
+            }
+        },
+        {
+            "name": "Void Ash",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 210
+            }
+        },
+        {
+            "name": "Ash Quartz",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 220,
+                "max": 240
+            }
+        },
+        {
+            "name": "Demonic Wrought Iron",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 210
+            }
+        },
+        {
+            "name": "Bloodsteel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 220
+            }
+        },
+        {
+            "name": "Red Iron",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 175,
+                "max": 215
+            }
+        },
+        {
+            "name": "Dawn Steel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 165,
+                "max": 195
+            }
+        },
+        {
+            "name": "Arcanite",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 410
+            }
+        },
+        {
+            "name": "Adamantine",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 320
+            }
+        },
+        {
+            "name": "Mizzium",
+            "rarity": "Rare",
+            "price": {
+                "min": 375,
+                "max": 425
+            }
+        },
+        {
+            "name": "Skaier",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            }
+        },
+        {
+            "name": "Gor'Shorot",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            }
+        },
+        {
+            "name": "Radiant Garnet",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 390
+            }
+        },
+        {
+            "name": "Blazing Brass",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            }
+        },
+        {
+            "name": "Prismatic Ice",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            }
+        },
+        {
+            "name": "Pixiesteel",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 320
+            }
+        },
+        {
+            "name": "Ashenite",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            }
+        },
+        {
+            "name": "Gravinite",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            }
+        },
+        {
+            "name": "Putrid Lead",
+            "rarity": "Rare",
+            "price": {
+                "min": 300,
+                "max": 340
+            }
+        },
+        {
+            "name": "Living Lava",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            }
+        },
+        {
+            "name": "Sanctified Ivory",
+            "rarity": "Rare",
+            "price": {
+                "min": 275,
+                "max": 315
+            }
+        },
+        {
+            "name": "Cosmic Ebony",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 390
+            }
+        },
+        {
+            "name": "Vilified Ivory",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 550
+            }
+        },
+        {
+            "name": "Devil's Mercury",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 425,
+                "max": 475
+            }
+        },
+        {
+            "name": "Cold Titian",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 440,
+                "max": 480
+            }
+        },
+        {
+            "name": "Cosmium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 480,
+                "max": 510
+            }
+        },
+        {
+            "name": "Alacriver",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 475,
+                "max": 500
+            }
+        },
+        {
+            "name": "Zuigni",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 430,
+                "max": 470
+            }
+        },
+        {
+            "name": "Cobalt",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 450,
+                "max": 475
+            }
+        },
+        {
+            "name": "Prismium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 525,
+                "max": 550
+            }
+        },
+        {
+            "name": "Terrataium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 425,
+                "max": 475
+            }
+        },
+        {
+            "name": "Malcanthym",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 435,
+                "max": 485
+            }
+        },
+        {
+            "name": "Dirythym",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
+            }
+        },
+        {
+            "name": "Keystone",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 440,
+                "max": 460
+            }
+        },
+        {
+            "name": "Warden's Copper",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 460,
+                "max": 490
+            }
+        },
+        {
+            "name": "ZuDark Platinum",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 465,
+                "max": 495
+            }
+        },
+        {
+            "name": "Tytantium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 450,
+                "max": 475
+            }
+        },
+        {
+            "name": "Eternium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 1000,
+                "max": 1200
+            }
+        },
+        {
+            "name": "Clockwork Bronze",
+            "rarity": "Legendary",
+            "price": {
+                "min": 750,
+                "max": 825
+            }
+        },
+        {
+            "name": "Celestial Gold",
+            "rarity": "Legendary",
+            "price": {
+                "min": 800,
+                "max": 900
+            }
+        },
+        {
+            "name": "Soulsteel",
+            "rarity": "Legendary",
+            "price": {
+                "min": 750,
+                "max": 825
+            }
+        },
+        {
+            "name": "Asmodeum",
+            "rarity": "Legendary",
+            "price": {
+                "min": 850,
+                "max": 1000
+            }
+        },
+        {
+            "name": "Truemetal",
+            "rarity": "Legendary",
+            "price": {
+                "min": 825,
+                "max": 875
+            }
+        },
+        {
+            "name": "Mockrium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 800,
+                "max": 900
             }
         }
     ]
