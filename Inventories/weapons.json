@@ -1,9 +1,244 @@
 {
     "weapons": [
         {
+            "name": "Club",
+            "plates": 1,
+            "price": 0.1
+        },
+        {
             "name": "Dagger",
             "plates": 1,
             "price": 2
+        },
+        {
+            "name": "Greatclub",
+            "plates": 3,
+            "price": 0.2
+        },
+        {
+            "name": "Handaxe",
+            "plates": 1,
+            "price": 5
+        },
+        {
+            "name": "Javelin",
+            "plates": 2,
+            "price": 0.5
+        },
+        {
+            "name": "Light Hammer",
+            "plates": 1,
+            "price": 2
+        },
+        {
+            "name": "Mace",
+            "plates": 2,
+            "price": 5
+        },
+        {
+            "name": "Quarterstaff",
+            "plates": 3,
+            "price": 0.2
+        },
+        {
+            "name": "Sickle",
+            "plates": 1,
+            "price": 1
+        },
+        {
+            "name": "Spear",
+            "plates": 2,
+            "price": 1
+        },
+        {
+            "name": "Battleaxe",
+            "plates": 3,
+            "price": 10
+        },
+        {
+            "name": "Flail",
+            "plates": 1,
+            "price": 10
+        },
+        {
+            "name": "Glaive",
+            "plates": 4,
+            "price": 20
+        },
+        {
+            "name": "Greataxe",
+            "plates": 4,
+            "price": 300
+        },
+        {
+            "name": "Greatsword",
+            "plates": 4,
+            "price": 50
+        },
+        {
+            "name": "Halberd",
+            "plates": 4,
+            "price": 20
+        },
+        {
+            "name": "Lance",
+            "plates": 4,
+            "price": 10
+        },
+        {
+            "name": "Longsword",
+            "plates": 3,
+            "price": 15
+        },
+        {
+            "name": "Maul",
+            "plates": 4,
+            "price": 10
+        },
+        {
+            "name": "Morningstar",
+            "plates": 2,
+            "price": 15
+        },
+        {
+            "name": "Pike",
+            "plates": 4,
+            "price": 5
+        },
+        {
+            "name": "Rapier",
+            "plates": 2,
+            "price": 25
+        },
+        {
+            "name": "Scimitar",
+            "plates": 1,
+            "price": 25
+        },
+        {
+            "name": "Shortsword",
+            "plates": 1,
+            "price": 10
+        },
+        {
+            "name": "Trident",
+            "plates": 3,
+            "price": 5
+        },
+        {
+            "name": "War Pick",
+            "plates": 2,
+            "price": 5
+        },
+        {
+            "name": "Warhammer",
+            "plates": 3,
+            "price": 15
+        },
+        {
+            "name": "Whip",
+            "plates": 2,
+            "price": 2
+        },
+        {
+            "name": "Crossbow Bolts (10)",
+            "plates": 1,
+            "price": 1
+        },
+        {
+            "name": "Arrows (10)",
+            "plates": 1,
+            "price": 1
+        },
+        {
+            "name": "Aling Ammo (10)",
+            "plates": 1,
+            "price": 0
+        },
+        {
+            "name": "Darts (15)",
+            "plates": 1,
+            "price": 15
+        },
+        {
+            "name": "Ballista Bolt (3)",
+            "plates": 1,
+            "price": 50
+        },
+        {
+            "name": "Naginata",
+            "plates": 3,
+            "price": 80
+        },
+        {
+            "name": "Shuang Gou",
+            "plates": 1,
+            "price": 10
+        },
+        {
+            "name": "Meteor Hammer",
+            "plates": 4,
+            "price": 100
+        },
+        {
+            "name": "Tonfa",
+            "plates": 1,
+            "price": 5
+        },
+        {
+            "name": "Urumi",
+            "plates": 3,
+            "price": 120
+        },
+        {
+            "name": "Chakram",
+            "plates": 1,
+            "price": 3
+        },
+        {
+            "name": "Cestus",
+            "plates": 1,
+            "price": 0.2
+        },
+        {
+            "name": "Iron Cestus",
+            "plates": 3,
+            "price": 15
+        },
+        {
+            "name": "Bassinet Claws",
+            "plates": 4,
+            "price": 25
+        },
+        {
+            "name": "Shell Blades",
+            "plates": 2,
+            "price": 30
+        },
+        {
+            "name": "Bardiche",
+            "plates": 3,
+            "price": 25
+        },
+        {
+            "name": "Slingsword",
+            "plates": 3,
+            "price": 250
+        },
+        {
+            "name": "Bola",
+            "plates": 1,
+            "price": 0.03
+        },
+        {
+            "name": "Bladed Net",
+            "plates": 3,
+            "price": 0.1
+        },
+        {
+            "name": "Man Catcher",
+            "plates": 3,
+            "price": 5
         }
     ]
 }
