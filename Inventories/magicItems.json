@@ -1,0 +1,12 @@
+{
+    "magicItems": [
+        {
+            "name": "Harmony Tea",
+            "rarity": "Common",
+            "price": {
+                "min": 10,
+                "max": 20
+            }
+        }
+    ]
+}

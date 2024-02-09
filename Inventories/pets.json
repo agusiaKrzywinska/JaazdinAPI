@@ -1,0 +1,14 @@
+{
+    "pets":
+    [
+        {
+            "name": "Brown Bear",
+            "cr": 1,
+            "price": {
+                "min": 100,
+                "max": 200
+            },
+            "type": "Beast"
+        }
+    ]
+}
