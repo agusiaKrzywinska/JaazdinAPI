@@ -31,9 +31,21 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
 
     $result = $connection->query($sqlUpdateBoat);
 
-    //TODO check all boats that just got into town and generate a table for merch for them 
+    //getting all boats in town for the first time.
+    $sqlGetBoatsInTownFirstWeek = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 1 AND (
+        (isTier2 = 0 AND weeksLeft = timeInTown) OR
+        (isTier2 = 1 AND weeksLeft = timeInTown + 1));";
 
-    //TODO check all boats that just left town to delete their merch 
+    $result = $connection->query($sqlGetBoatsInTownFirstWeek);
+    //TODO generate all inventories for boats in town
+
+    //getting all boats that have just left town.
+    $sqlGetBoatsThatLeftTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 0 AND (
+        (isTier2 = 0 AND weeksLeft = waitTime) OR
+        (isTier2 = 1 AND weeksLeft = waitTime - 1));";
+
+    $result = $connection->query($sqlGetBoatsThatLeftTown);
+    //TODO remove all the merch tables which were created for boats in town. 
 
     echo json_encode(array("Boats were updated"));
 } else {
