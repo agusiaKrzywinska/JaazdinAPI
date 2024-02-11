@@ -1,11 +1,155 @@
 {
     "poisons": [
         {
-            "name": "Harmony Tea",
+            "name": "Assassin's Blood",
             "rarity": "Common",
             "price": {
-                "min": 10,
-                "max": 20
+                "min": 90,
+                "max": 110
+            }
+        },
+        {
+            "name": "Truth Serum",
+            "rarity": "Common",
+            "price": {
+                "min": 110,
+                "max": 125
+            }
+        },
+        {
+            "name": "Serpent Venom",
+            "rarity": "Common",
+            "price": {
+                "min": 80,
+                "max": 90
+            }
+        },
+        {
+            "name": "Wirehasg",
+            "rarity": "Common",
+            "price": {
+                "min": 65,
+                "max": 90
+            }
+        },
+        {
+            "name": "Oil of Taggit",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 125,
+                "max": 150
+            }
+        },
+        {
+            "name": "Drow Poison",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 130,
+                "max": 160
+            }
+        },
+        {
+            "name": "Crawler Mucus",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 100,
+                "max": 125
+            }
+        },
+        {
+            "name": "Noctumcap Poison",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 100,
+                "max": 125
+            }
+        },
+        {
+            "name": "Shai Leaf",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 125,
+                "max": 150
+            }
+        },
+        {
+            "name": "Burnt Orthor Fumes",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 160,
+                "max": 170
+            }
+        },
+        {
+            "name": "Pale Tincture",
+            "rarity": "Rare",
+            "price": {
+                "min": 300,
+                "max": 350
+            }
+        },
+        {
+            "name": "Malice",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 320
+            }
+        },
+        {
+            "name": "Essence of Ether",
+            "rarity": "Rare",
+            "price": {
+                "min": 225,
+                "max": 275
+            }
+        },
+        {
+            "name": "Fogged Mind Poison",
+            "rarity": "Rare",
+            "price": {
+                "min": 200,
+                "max": 250
+            }
+        },
+        {
+            "name": "Torpor",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 340
+            }
+        },
+        {
+            "name": "Wyvern Venom",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 350,
+                "max": 380
+            }
+        },
+        {
+            "name": "Momento Poison",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 325,
+                "max": 375
+            }
+        },
+        {
+            "name": "Soulburning Poison",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 300,
+                "max": 350
+            }
+        },
+        {
+            "name": "Midnight Tears",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 300,
+                "max": 350
             }
         }
     ]
