@@ -1458,6 +1458,186 @@
                 "max": 190
             },
             "type": "Abberation"
+        },
+        {
+            "name": "Gibbering Mouther",
+            "cr": 2,
+            "price": {
+                "min": 1000,
+                "max": 1200
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Flying Horror",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Chaos Quadrapod",
+            "cr": 4,
+            "price": {
+                "min": 1200,
+                "max": 1400
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Scuttling Serpentmaw",
+            "cr": 4,
+            "price": {
+                "min": 1200,
+                "max": 1400
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Feyr",
+            "cr": 5,
+            "price": {
+                "min": 1300,
+                "max": 1500
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Light Devourer",
+            "cr": 6,
+            "price": {
+                "min": 2800,
+                "max": 3000
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Shadow Horror",
+            "cr": 9,
+            "price": {
+                "min": 19000,
+                "max": 21000
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Slithering Bloodfin",
+            "cr": 9,
+            "price": {
+                "min": 19000,
+                "max": 21000
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Death Embrace",
+            "cr": 11,
+            "price": {
+                "min": 21000,
+                "max": 23000
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Neothelid",
+            "cr": 13,
+            "price": {
+                "min": 49000,
+                "max": 51000
+            },
+            "type": "Abberation"
+        },
+        {
+            "name": "Oblex Spawn",
+            "cr": 0.25,
+            "price": {
+                "min": 140,
+                "max": 150
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Slithering Tracker",
+            "cr": 3,
+            "price": {
+                "min": 1200,
+                "max": 1300
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Bag Jelly",
+            "cr": 1,
+            "price": {
+                "min": 150,
+                "max": 160
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Dragonblood Ooze",
+            "cr": 5,
+            "price": {
+                "min": 1300,
+                "max": 1400
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Pseudodragon",
+            "cr": 0.25,
+            "price": {
+                "min": 140,
+                "max": 150
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Ambush Drake",
+            "cr": 0.5,
+            "price": {
+                "min": 150,
+                "max": 160
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Dragonnel",
+            "cr": 2,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Guard Drake",
+            "cr": 2,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Wyvern",
+            "cr": 6,
+            "price": {
+                "min": 3000,
+                "max": 3300
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Jabberwock",
+            "cr": 13,
+            "price": {
+                "min": 50000,
+                "max": 51000
+            },
+            "type": "Dragon"
         }
     ]
 }
