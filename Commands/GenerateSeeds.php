@@ -22,5 +22,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // pick a random element from the array and return that seed 
     $chosenSeed = $validSeeds[rand(0, count($validSeeds) - 1)];
-    return $chosenSeed;
+    echo json_encode($chosenSeed);
 }

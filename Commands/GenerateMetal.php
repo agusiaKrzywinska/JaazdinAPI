@@ -22,5 +22,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // pick a random element from the array and return that metal 
     $metalChosen = $validMetals[rand(0, count($validMetals) - 1)];
-    return $metalChosen;
+    echo json_encode($metalChosen);
 }

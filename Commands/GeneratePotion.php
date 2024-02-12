@@ -22,5 +22,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // pick a random element from the array and return that potion 
     $chosenPotion = $validPotions[rand(0, count($validPotions) - 1)];
-    return $chosenPotion;
+    echo json_encode($chosenPotion);
 }

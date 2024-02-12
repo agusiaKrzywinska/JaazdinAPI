@@ -22,5 +22,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     //pick a random element from the array and return that poison 
     $chosenPoison = $validPoison[rand(0, count($validPoison) - 1)];
-    return $chosenPoison;
+    echo json_encode($chosenPoison);
 }

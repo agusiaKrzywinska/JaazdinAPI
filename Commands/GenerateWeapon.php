@@ -11,8 +11,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $weaponChosen = $weapons["weapons"][rand(0, count($weapons["weapons"]) - 1)];
 
     // pick a random metal based on the rarity. 
-    $weaponChosen['metal'] = require 'GenerateMetal.php';
+    $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMetal.php?rarity=$metalRarity";
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/json",
+            'method' => 'GET'
+        ],
+    ];
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $weaponChosen['metal'] = json_decode($result);
 
     echo json_encode($weaponChosen);
-    return $weaponChosen;
 }

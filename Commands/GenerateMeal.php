@@ -22,5 +22,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // pick a random element from the array and return that meal 
     $mealChosen = $validMeals[rand(0, count($validMeals) - 1)];
-    return $mealChosen;
+    echo json_encode($mealChosen);
 }
