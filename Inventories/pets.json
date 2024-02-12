@@ -1179,6 +1179,285 @@
                 "max": 1200
             },
             "type": "Monstrosity"
+        },
+        {
+            "name": "Two-Headed Cerberus",
+            "cr": 2,
+            "price": {
+                "min": 1000,
+                "max": 1200
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Carrion Stalker",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Cave Fisher",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Displacer Beast",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Fleecemane Lion",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Owlbear",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Phase Spider",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Trapper",
+            "cr": 3,
+            "price": {
+                "min": 1100,
+                "max": 1300
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Girallon",
+            "cr": 4,
+            "price": {
+                "min": 1200,
+                "max": 1400
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Kamadan",
+            "cr": 4,
+            "price": {
+                "min": 1200,
+                "max": 1400
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Bulette",
+            "cr": 5,
+            "price": {
+                "min": 1400,
+                "max": 1600
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Catoblepas",
+            "cr": 5,
+            "price": {
+                "min": 1400,
+                "max": 1600
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Egg Hunter Adult",
+            "cr": 5,
+            "price": {
+                "min": 1400,
+                "max": 1600
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Gorgon",
+            "cr": 5,
+            "price": {
+                "min": 1400,
+                "max": 1600
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Roper",
+            "cr": 5,
+            "price": {
+                "min": 1400,
+                "max": 1600
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Sea Lion",
+            "cr": 5,
+            "price": {
+                "min": 1400,
+                "max": 1600
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Grick Alpha",
+            "cr": 7,
+            "price": {
+                "min": 2800,
+                "max": 3000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Hydra",
+            "cr": 8,
+            "price": {
+                "min": 2900,
+                "max": 3100
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Telepathic Pentacle",
+            "cr": 8,
+            "price": {
+                "min": 2900,
+                "max": 3100
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Unspeakable Horror",
+            "cr": 8,
+            "price": {
+                "min": 2900,
+                "max": 3100
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Ceratops",
+            "cr": 9,
+            "price": {
+                "min": 18000,
+                "max": 20000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Areosaur",
+            "cr": 10,
+            "price": {
+                "min": 19000,
+                "max": 21000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Froghemoth",
+            "cr": 11,
+            "price": {
+                "min": 20000,
+                "max": 22000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Necrotic Centipede",
+            "cr": 11,
+            "price": {
+                "min": 20000,
+                "max": 22000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Remorhaz",
+            "cr": 11,
+            "price": {
+                "min": 20000,
+                "max": 22000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Void Scavver",
+            "cr": 11,
+            "price": {
+                "min": 20000,
+                "max": 22000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Gray Render",
+            "cr": 12,
+            "price": {
+                "min": 21000,
+                "max": 23000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Ironscale Hydra",
+            "cr": 12,
+            "price": {
+                "min": 21000,
+                "max": 23000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Altisaur",
+            "cr": 13,
+            "price": {
+                "min": 22000,
+                "max": 24000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Skywimmer",
+            "cr": 13,
+            "price": {
+                "min": 22000,
+                "max": 24000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Gazer",
+            "cr": 0.5,
+            "price": {
+                "min": 140,
+                "max": 190
+            },
+            "type": "Abberation"
         }
     ]
 }
