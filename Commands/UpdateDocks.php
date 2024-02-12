@@ -38,6 +38,43 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
 
     $result = $connection->query($sqlGetBoatsInTownFirstWeek);
     //TODO generate all inventories for boats in town
+    while ($row = $result->fetch_assoc()) {
+        $type = $row["tableToGenerate"];
+        switch ($type) {
+            case "metals":
+                $goods = generateMetals();
+                break;
+            case "pets":
+                $goods = generatePets();
+                break;
+            case "meals":
+                $goods = generateMeals();
+                break;
+            case "weaponry":
+                $goods = generateWeaponry();
+                break;
+            case "magic items":
+                $goods = generateMagicItems();
+                break;
+            case "reagents":
+                $goods = generateReagents();
+                break;
+            case "poisons potions":
+                $goods = generatePoisonsPotions();
+                break;
+            case "plants":
+                $goods = generateSeeds();
+                break;
+        }        
+        $sqlCreateTable = "CREATE TABLE $type (
+            id int NOT NULL AUTO_INCREMENT,
+            itemName varchar(40),
+            price int,
+            quantity int,
+            PRIMARY KEY (id)
+        );";
+        $resultLoop = $connection->query($sqlCreateTable);
+    }
 
     //getting all boats that have just left town.
     $sqlGetBoatsThatLeftTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 0 AND (
@@ -45,11 +82,53 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
         (isTier2 = 1 AND weeksLeft = waitTime - 1));";
 
     $result = $connection->query($sqlGetBoatsThatLeftTown);
-    //TODO remove all the merch tables which were created for boats in town. 
+    while ($row = $result->fetch_assoc()) {
+        $type = $row["tableToGenerate"];
+        $sqlDropTable = "DROP TABLE $type;";
+        $resultLoop = $connection->query($sqlDropTable);
+    }
 
     echo json_encode(array("Boats were updated"));
-} else {
-    echo json_encode(array("Was not a post request"));
 }
 
 $connection->close();
+
+function generateMetals()
+{
+    return null;
+}
+
+function generatePets()
+{
+    return null;
+}
+
+function generateMeals()
+{
+    return null;
+}
+
+function generatePoisonsPotions()
+{
+    return null;
+}
+
+function generateReagents()
+{
+    return null;
+}
+
+function generateMagicItems()
+{
+    return null;
+}
+
+function generateWeaponry()
+{
+    return null;
+}
+
+function generateSeeds()
+{
+    return null;
+}

@@ -40,3 +40,12 @@ VALUES("U~Otakatta","Shinzhou","The Zhoulands",6,2,"Gardening Doctor","Character
 --Mycerion
 INSERT INTO `boats` (`boatName`, `city`, `country`, `waitTime`, `timeInTown`, `jobsAffected`, `tier2Ability`, `tableToGenerate`, `isTier2`, `weeksLeft`, `isInTown`, `isRunning`) 
 VALUES("The Indomiatable II","Mycerion","Ocean's Valley",4,1,"Arcanist Teaching","Character's attempting research only have to play 25gp instead of 50gp to gain a +1 to their research check.","",false,6,false,false);
+
+-- Create Shipment Table
+CREATE TABLE shipment (
+    id int NOT NULL AUTO_INCREMENT,
+    itemName varchar(40),
+    price int,
+    quantity int,
+    PRIMARY KEY (id)
+);
