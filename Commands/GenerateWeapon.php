@@ -6,15 +6,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $json_url = "../Inventories/weapons.json";
 
-    // Decode the JSON data into an associative array
-    $armors = json_decode(file_get_contents($json_url), true);
+    // pick a random weapon
+    $weapons = json_decode(file_get_contents($json_url), true);
+    $weaponChosen = $weapons["weapons"][rand(0, count($weapons["weapons"]) - 1)];
 
-    //pick a random element from the array and return that metal 
-    $weaponChoosen = $armors["weapons"][rand(0, count($armors["weapons"]) - 1)];
+    // pick a random metal based on the rarity. 
+    $weaponChosen['metal'] = require 'GenerateMetal.php';
 
-    //pick a random metal based on the rarity. 
-    $weaponChoosen['metal'] = require 'GenerateMetal.php';
-
-    echo json_encode($weaponChoosen);
-    return $weaponChoosen;
+    echo json_encode($weaponChosen);
+    return $weaponChosen;
 }

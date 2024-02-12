@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $json_url = "../Inventories/seeds.json";
 
-    // Decode the JSON data into an associative array
+    // find all valid seeds
     $validSeeds = [];
     $seeds = json_decode(file_get_contents($json_url), true);
     foreach ($seeds["seeds"] as $seed) {
@@ -20,8 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
 
-    //pick a random element from the array and return that metal 
-    $choosenSeed = $validSeeds[rand(0, count($validSeeds) - 1)];
-    echo json_encode($choosenSeed);
-    return $choosenSeed;
+    // pick a random element from the array and return that seed 
+    $chosenSeed = $validSeeds[rand(0, count($validSeeds) - 1)];
+    return $chosenSeed;
 }

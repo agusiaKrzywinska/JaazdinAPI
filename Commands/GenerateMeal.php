@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $json_url = "../Inventories/meals.json";
 
-    // Decode the JSON data into an associative array
+    // find all valid meals
     $validMeals = [];
     $meals = json_decode(file_get_contents($json_url), true);
     foreach ($meals["meals"] as $meal) {
@@ -20,8 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
 
-    //pick a random element from the array and return that metal 
-    $mealChoosen = $validMeals[rand(0, count($validMeals) - 1)];
-    echo json_encode($mealChoosen);
-    return $mealChoosen;
+    // pick a random element from the array and return that meal 
+    $mealChosen = $validMeals[rand(0, count($validMeals) - 1)];
+    return $mealChosen;
 }
