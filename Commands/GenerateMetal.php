@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $parameters = json_decode(file_get_contents("php://input"));
         $rarity = $parameters->rarity;
     }
-
+    $rarity = str_replace('%20', ' ', $rarity);
     $json_url = "../Inventories/metals.json";
 
     // find all valid metals

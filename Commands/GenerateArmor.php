@@ -3,6 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $parameters = json_decode(file_get_contents("php://input"));
     $metalRarity = $parameters->rarity;
+    $metalRarity = str_replace(' ', '%20', $metalRarity);
 
     $json_url = "../Inventories/armors.json";
 

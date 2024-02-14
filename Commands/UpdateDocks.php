@@ -37,9 +37,19 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
         (isTier2 = 1 AND weeksLeft = timeInTown + 1));";
 
     $result = $connection->query($sqlGetBoatsInTownFirstWeek);
-    //TODO generate all inventories for boats in town
+
     while ($row = $result->fetch_assoc()) {
         $type = $row["tableToGenerate"];
+
+        $sqlCreateTable = "CREATE TABLE $type (
+            id int NOT NULL AUTO_INCREMENT,
+            itemName varchar(40),
+            price int,
+            quantity int,
+            PRIMARY KEY (id)
+        );";
+        $resultLoop = $connection->query($sqlCreateTable);
+
         switch ($type) {
             case "metals":
                 $goods = generateMetals();
@@ -65,15 +75,15 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
             case "plants":
                 $goods = generateSeeds();
                 break;
-        }        
-        $sqlCreateTable = "CREATE TABLE $type (
-            id int NOT NULL AUTO_INCREMENT,
-            itemName varchar(40),
-            price int,
-            quantity int,
-            PRIMARY KEY (id)
-        );";
-        $resultLoop = $connection->query($sqlCreateTable);
+        }
+
+        foreach ($goods as $name => $data) {
+            //TODO add all the goods into the table that was created. 
+            $price = $data["price"];
+            $quantity = $data["quantity"];
+            $sqlCreateTable = "INSERT INTO $type (`itemName`, `price`, `quantity`) VALUES('$name',$price,$quantity);";
+            $resultLoop = $connection->query($sqlCreateTable);
+        }
     }
 
     //getting all boats that have just left town.
@@ -95,7 +105,56 @@ $connection->close();
 
 function generateMetals()
 {
-    return null;
+    $goods = [];
+    //calculating the metals to generate. 
+    $startingUncommon = 5;
+    $startingRare = 3;
+    $typesToSpawn = array("Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 5) {
+            $typesToSpawn["Rare"]++;
+        } else if ($randNumber == 6) {
+            $typesToSpawn["Very Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+    for ($i = 0; $i < $startingRare; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 5) {
+            $typesToSpawn["Very Rare"]++;
+        } else if ($randNumber == 6) {
+            $typesToSpawn["Legendary"]++;
+        } else {
+            $typesToSpawn["Rare"]++;
+        }
+    }
+    //generate all metals
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMetal.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempMetal = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempMetal->name, 'quantity' => 1, 'price' => rand($tempMetal->price->min, $tempMetal->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+    return $goods;
 }
 
 function generatePets()
