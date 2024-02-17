@@ -170,7 +170,94 @@ function generateMetals()
 //todo generate weaponry
 function generateWeaponry()
 {
-    return null;
+    $goods = [];
+    $startingArmors = 2;
+    $startingWeapons = 2;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    $metalsInUse = array("NA" => 0);
+
+    for ($i = 0; $i < $startingArmors; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } elseif ($randNumber == 3) {
+            $typesToSpawn["Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    //generate all armors
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateArmor.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempArmor = json_decode($contents);
+            //finding out which metal it is using
+            if (array_key_exists($tempArmor->metal->name, $metalsInUse) == false) {
+                $metalsInUse[$tempArmor->metal->name] = rand($tempArmor->metal->price->min, $tempArmor->metal->price->max);
+            }
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempArmor->metal->name . " " . $tempArmor->name, 'quantity' => 1, 'price' => $metalsInUse[$tempArmor->metal->name] * $tempArmor->plates * $tempArmor->price);
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+    
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingWeapons; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } elseif ($randNumber == 3) {
+            $typesToSpawn["Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    //generate all weapons
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateWeapon.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempWeapon = json_decode($contents);
+            if (array_key_exists($tempWeapon->metal->name, $metalsInUse) == false) {
+                $metalsInUse[$tempWeapon->metal->name] = rand($tempWeapon->metal->price->min, $tempWeapon->metal->price->max);
+            }
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => $metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates * $tempWeapon->price);
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+    
+
+    return $goods;
 }
 
 //todo generate pets. 
