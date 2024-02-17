@@ -214,7 +214,7 @@ function generateWeaponry()
             }
         }
     }
-    
+
     $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
 
     for ($i = 0; $i < $startingWeapons; $i++) {
@@ -254,7 +254,7 @@ function generateWeaponry()
             }
         }
     }
-    
+
 
     return $goods;
 }
@@ -262,7 +262,95 @@ function generateWeaponry()
 //todo generate pets. 
 function generatePets()
 {
-    return null;
+    $goods = [];
+    $totalPets = 5;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $totalPets; $i++) {
+        $randNumber = rand(1, 20);
+        if ($randNumber >= 19) {
+            $typesToSpawn['Legendary']++;
+        } elseif ($randNumber >= 16) {
+            $typesToSpawn["Very Rare"]++;
+        } elseif ($randNumber >= 11) {
+            $typesToSpawn["Rare"]++;
+        } elseif ($randNumber >= 6) {
+            $typesToSpawn["Uncommon"]++;
+        } else {
+            $typesToSpawn["Common"]++;
+        }
+    }
+
+    $invalidCombinations = array("Common" => array(), "Uncommon" => array(), "Rare" => array("Ooze"), "Very Rare" => array("Beat", "Ooze", "Dragon"), "Legendary" => array("Beast", "Ooze"));
+    //generating all the beast types. 
+    $currentPetId = 0;
+    $petTypes = [];
+    while ($currentPetId < $totalPets) {
+        $tempPetType = null;
+        $randNumber = rand(1, 20);
+        if ($randNumber == 20) {
+            $tempPetType = "Dragon";
+        } elseif ($randNumber >= 18) {
+            $tempPetType = "Ooze";
+        } elseif ($randNumber >= 14) {
+            $tempPetType = "Aberration";
+        } elseif ($randNumber >= 9) {
+            $tempPetType = "Monstrosity";
+        } else {
+            $tempPetType = "Beast";
+        }
+        //getting the rarity of the type
+        $currentRarity = "";
+        $temp = 0;
+        foreach ($typesToSpawn as $rarity => $amount) {
+            for ($i = 0; $i < $amount; $i++) {
+                if ($temp == $currentPetId) {
+                    $currentRarity = $rarity;
+                }
+                $temp++;
+            }
+        }
+
+        //validating that it is a valid combination
+        if (in_array($tempPetType, $invalidCombinations["$currentRarity"])) {
+            continue;
+        }
+
+        $currentPetId++;
+        $petTypes[] = $tempPetType;
+
+    }
+
+    //generate all armors
+    $currentPetId = 0;
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $finalCreatureType = $petTypes[$currentPetId];
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GeneratePet.php?rarity=$finalRarity&creatureType=$finalCreatureType";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempPet = json_decode($contents);
+            var_dump($contents);
+
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempPet->name, 'quantity' => 1, 'price' => $tempPet->price->min, $tempPet->price->max);
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+
+            $currentPetId++;
+        }
+    }
+    return $goods;
 }
 
 function generateMeals()
