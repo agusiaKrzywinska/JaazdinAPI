@@ -13,21 +13,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //update if they are in port or not based on if they reached 0. 
     $sqlUpdateBoat = "UPDATE boats
-SET weeksLeft = CASE
-                    WHEN isTier2 = 1 THEN CASE
-                                                WHEN isInTown = 1 THEN waitTime - 1
-                                                ELSE timeInTown + 1
-                                            END
-                    ELSE CASE
-                            WHEN isInTown = 1 THEN waitTime
-                            ELSE timeInTown
-                         END
-                END,
-    isInTown = CASE
-                    WHEN isInTown = 0 THEN 1
-                    ELSE 0
-                END
-WHERE isRunning = 1 AND weeksLeft <= 0;";
+        SET weeksLeft = CASE
+                            WHEN isTier2 = 1 THEN CASE
+                                                        WHEN isInTown = 1 THEN waitTime - 1
+                                                        ELSE timeInTown + 1
+                                                    END
+                            ELSE CASE
+                                    WHEN isInTown = 1 THEN waitTime
+                                    ELSE timeInTown
+                                 END
+                        END,
+            isInTown = CASE
+                            WHEN isInTown = 0 THEN 1
+                            ELSE 0
+                        END
+        WHERE isRunning = 1 AND weeksLeft <= 0;";
 
     $result = $connection->query($sqlUpdateBoat);
 
@@ -37,9 +37,19 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
         (isTier2 = 1 AND weeksLeft = timeInTown + 1));";
 
     $result = $connection->query($sqlGetBoatsInTownFirstWeek);
-    //TODO generate all inventories for boats in town
+
     while ($row = $result->fetch_assoc()) {
         $type = $row["tableToGenerate"];
+
+        $sqlCreateTable = "CREATE TABLE $type (
+            id int NOT NULL AUTO_INCREMENT,
+            itemName varchar(40),
+            price int,
+            quantity int,
+            PRIMARY KEY (id)
+        );";
+        $resultLoop = $connection->query($sqlCreateTable);
+
         switch ($type) {
             case "metals":
                 $goods = generateMetals();
@@ -53,27 +63,27 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
             case "weaponry":
                 $goods = generateWeaponry();
                 break;
-            case "magic items":
+            case "magicItems":
                 $goods = generateMagicItems();
                 break;
             case "reagents":
                 $goods = generateReagents();
                 break;
-            case "poisons potions":
+            case "poisonsPotions":
                 $goods = generatePoisonsPotions();
                 break;
             case "plants":
                 $goods = generateSeeds();
                 break;
-        }        
-        $sqlCreateTable = "CREATE TABLE $type (
-            id int NOT NULL AUTO_INCREMENT,
-            itemName varchar(40),
-            price int,
-            quantity int,
-            PRIMARY KEY (id)
-        );";
-        $resultLoop = $connection->query($sqlCreateTable);
+        }
+
+        foreach ($goods as $name => $data) {
+            //adding all the goods into the table that was created. 
+            $price = $data["price"];
+            $quantity = $data["quantity"];
+            $sqlCreateTable = "INSERT INTO $type (`itemName`, `price`, `quantity`) VALUES('$name',$price,$quantity);";
+            $resultLoop = $connection->query($sqlCreateTable);
+        }
     }
 
     //getting all boats that have just left town.
@@ -88,16 +98,169 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
         $resultLoop = $connection->query($sqlDropTable);
     }
 
-    echo json_encode(array("Boats were updated"));
+    //calling show boats and returning their message as ours. 
+    $url = "http://jaazdinapi.mygamesonline.org/Commands/ShowBoats.php";
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/json",
+            'method' => 'GET'
+        ],
+    ];
+    $context = stream_context_create($options);
+    $contents = file_get_contents($url, false, $context);
+
+    echo $contents;
 }
 
 $connection->close();
 
 function generateMetals()
 {
-    return null;
+    $goods = [];
+    //calculating the metals to generate. 
+    $startingUncommon = 5;
+    $startingRare = 3;
+    $typesToSpawn = array("Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 5) {
+            $typesToSpawn["Rare"]++;
+        } else if ($randNumber == 6) {
+            $typesToSpawn["Very Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+    for ($i = 0; $i < $startingRare; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 5) {
+            $typesToSpawn["Very Rare"]++;
+        } else if ($randNumber == 6) {
+            $typesToSpawn["Legendary"]++;
+        } else {
+            $typesToSpawn["Rare"]++;
+        }
+    }
+    //generate all metals
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMetal.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempMetal = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempMetal->name, 'quantity' => 1, 'price' => rand($tempMetal->price->min, $tempMetal->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+    return $goods;
 }
 
+//todo generate weaponry
+function generateWeaponry()
+{
+    $goods = [];
+    $startingArmors = 2;
+    $startingWeapons = 2;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    $metalsInUse = array("NA" => 0);
+
+    for ($i = 0; $i < $startingArmors; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } elseif ($randNumber == 3) {
+            $typesToSpawn["Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    //generate all armors
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateArmor.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempArmor = json_decode($contents);
+            //finding out which metal it is using
+            if (array_key_exists($tempArmor->metal->name, $metalsInUse) == false) {
+                $metalsInUse[$tempArmor->metal->name] = rand($tempArmor->metal->price->min, $tempArmor->metal->price->max);
+            }
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempArmor->metal->name . " " . $tempArmor->name, 'quantity' => 1, 'price' => $metalsInUse[$tempArmor->metal->name] * $tempArmor->plates * $tempArmor->price);
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+    
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingWeapons; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } elseif ($randNumber == 3) {
+            $typesToSpawn["Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    //generate all weapons
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateWeapon.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempWeapon = json_decode($contents);
+            if (array_key_exists($tempWeapon->metal->name, $metalsInUse) == false) {
+                $metalsInUse[$tempWeapon->metal->name] = rand($tempWeapon->metal->price->min, $tempWeapon->metal->price->max);
+            }
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => $metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates * $tempWeapon->price);
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+    
+
+    return $goods;
+}
+
+//todo generate pets. 
 function generatePets()
 {
     return null;
@@ -105,30 +268,240 @@ function generatePets()
 
 function generateMeals()
 {
-    return null;
+    $goods = [];
+    $startingCommon = 4;
+    $startingUncommon = 4;
+    $startingRare = 4;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingCommon; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Uncommon']++;
+        } else {
+            $typesToSpawn["Common"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingRare; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
+            $typesToSpawn["Rare"]++;
+        }
+    }
+
+    //generate all meals
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMeal.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempMeal = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempMeal->name, 'quantity' => 1, 'price' => rand($tempMeal->price->min, $tempMeal->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+
+    return $goods;
 }
 
 function generatePoisonsPotions()
 {
-    return null;
+    $goods = [];
+    $startingUncommon = 3;
+    $startingRare = 2;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingRare; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
+            $typesToSpawn["Rare"]++;
+        }
+    }
+
+    //generate all poisons
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GeneratePoison.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempPoison = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempPoison->name, 'quantity' => 1, 'price' => rand($tempPoison->price->min, $tempPoison->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+
+    $startingUncommon = 2;
+    $startingRare = 2;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingRare; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
+            $typesToSpawn["Rare"]++;
+        }
+    }
+
+    //generate all potions
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GeneratePotion.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempPotion = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempPotion->name, 'quantity' => 1, 'price' => rand($tempPotion->price->min, $tempPotion->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+
+    return $goods;
 }
 
-function generateReagents()
-{
-    return null;
-}
-
+//todo generate magic items
 function generateMagicItems()
 {
     return null;
 }
 
-function generateWeaponry()
+function generateSeeds()
 {
-    return null;
+    $goods = [];
+    $startingCommon = 2;
+    $startingUncommon = 2;
+    $startingRare = 2;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $startingCommon; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 3) {
+            $typesToSpawn['Uncommon']++;
+        } elseif ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
+            $typesToSpawn["Common"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 3) {
+            $typesToSpawn['Rare']++;
+        } elseif ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingRare; $i++) {
+        $randNumber = rand(1, 4);
+        if ($randNumber == 4) {
+            $typesToSpawn['Legendary']++;
+        } elseif ($randNumber == 3) {
+            $typesToSpawn['Very Rare']++;
+        } else {
+            $typesToSpawn["Rare"]++;
+        }
+    }
+
+    //generate all seeds
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateSeeds.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempSeed = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempSeed->name, 'quantity' => 1, 'price' => rand($tempSeed->price->min, $tempSeed->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+
+    return $goods;
 }
 
-function generateSeeds()
+//todo generate reagents
+function generateReagents()
 {
     return null;
 }
