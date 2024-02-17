@@ -13,21 +13,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //update if they are in port or not based on if they reached 0. 
     $sqlUpdateBoat = "UPDATE boats
-SET weeksLeft = CASE
-                    WHEN isTier2 = 1 THEN CASE
-                                                WHEN isInTown = 1 THEN waitTime - 1
-                                                ELSE timeInTown + 1
-                                            END
-                    ELSE CASE
-                            WHEN isInTown = 1 THEN waitTime
-                            ELSE timeInTown
-                         END
-                END,
-    isInTown = CASE
-                    WHEN isInTown = 0 THEN 1
-                    ELSE 0
-                END
-WHERE isRunning = 1 AND weeksLeft <= 0;";
+        SET weeksLeft = CASE
+                            WHEN isTier2 = 1 THEN CASE
+                                                        WHEN isInTown = 1 THEN waitTime - 1
+                                                        ELSE timeInTown + 1
+                                                    END
+                            ELSE CASE
+                                    WHEN isInTown = 1 THEN waitTime
+                                    ELSE timeInTown
+                                 END
+                        END,
+            isInTown = CASE
+                            WHEN isInTown = 0 THEN 1
+                            ELSE 0
+                        END
+        WHERE isRunning = 1 AND weeksLeft <= 0;";
 
     $result = $connection->query($sqlUpdateBoat);
 
@@ -63,13 +63,13 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
             case "weaponry":
                 $goods = generateWeaponry();
                 break;
-            case "magic items":
+            case "magicItems":
                 $goods = generateMagicItems();
                 break;
             case "reagents":
                 $goods = generateReagents();
                 break;
-            case "poisons potions":
+            case "poisonsPotions":
                 $goods = generatePoisonsPotions();
                 break;
             case "plants":
@@ -98,7 +98,18 @@ WHERE isRunning = 1 AND weeksLeft <= 0;";
         $resultLoop = $connection->query($sqlDropTable);
     }
 
-    echo json_encode(array("Boats were updated"));
+    //calling show boats and returning their message as ours. 
+    $url = "http://jaazdinapi.mygamesonline.org/Commands/ShowBoats.php";
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/json",
+            'method' => 'GET'
+        ],
+    ];
+    $context = stream_context_create($options);
+    $contents = file_get_contents($url, false, $context);
+
+    echo $contents;
 }
 
 $connection->close();
@@ -176,35 +187,29 @@ function generateMeals()
     $startingRare = 4;
     $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
 
-    for ($i = 0; $i < $startingCommon; $i++)
-    {
+    for ($i = 0; $i < $startingCommon; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Uncommon']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Uncommon']++;
+        } else {
             $typesToSpawn["Common"]++;
         }
     }
 
-    for ($i = 0; $i < $startingUncommon; $i++)
-    {
+    for ($i = 0; $i < $startingUncommon; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
             $typesToSpawn["Uncommon"]++;
         }
     }
 
-    for ($i = 0; $i < $startingRare; $i++)
-    {
+    for ($i = 0; $i < $startingRare; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Very Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
             $typesToSpawn["Rare"]++;
         }
     }
@@ -243,24 +248,20 @@ function generatePoisonsPotions()
     $startingRare = 2;
     $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
 
-    for ($i = 0; $i < $startingUncommon; $i++)
-    {
+    for ($i = 0; $i < $startingUncommon; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
             $typesToSpawn["Uncommon"]++;
         }
     }
 
-    for ($i = 0; $i < $startingRare; $i++)
-    {
+    for ($i = 0; $i < $startingRare; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Very Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
             $typesToSpawn["Rare"]++;
         }
     }
@@ -293,24 +294,20 @@ function generatePoisonsPotions()
     $startingRare = 2;
     $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
 
-    for ($i = 0; $i < $startingUncommon; $i++)
-    {
+    for ($i = 0; $i < $startingUncommon; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
             $typesToSpawn["Uncommon"]++;
         }
     }
 
-    for ($i = 0; $i < $startingRare; $i++)
-    {
+    for ($i = 0; $i < $startingRare; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Very Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
             $typesToSpawn["Rare"]++;
         }
     }
@@ -356,43 +353,35 @@ function generateSeeds()
     $startingRare = 2;
     $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
 
-    for ($i = 0; $i < $startingCommon; $i++)
-    {
+    for ($i = 0; $i < $startingCommon; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 3) {
-            $typesToSpawn['Uncommon']++; 
-        }
-        elseif($randNumber == 4) {
-            $typesToSpawn['Rare']++; 
-        }
-        else {
+        if ($randNumber == 3) {
+            $typesToSpawn['Uncommon']++;
+        } elseif ($randNumber == 4) {
+            $typesToSpawn['Rare']++;
+        } else {
             $typesToSpawn["Common"]++;
         }
     }
 
-    for ($i = 0; $i < $startingUncommon; $i++)
-    {
+    for ($i = 0; $i < $startingUncommon; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 3) {
-            $typesToSpawn['Rare']++; 
-        }
-        elseif($randNumber == 4) {
-            $typesToSpawn['Very Rare']++; 
-        }
-        else {
+        if ($randNumber == 3) {
+            $typesToSpawn['Rare']++;
+        } elseif ($randNumber == 4) {
+            $typesToSpawn['Very Rare']++;
+        } else {
             $typesToSpawn["Uncommon"]++;
         }
     }
 
-    for ($i = 0; $i < $startingRare; $i++)
-    {
+    for ($i = 0; $i < $startingRare; $i++) {
         $randNumber = rand(1, 4);
-        if($randNumber == 4) {
-            $typesToSpawn['Legendary']++; 
-        }elseif($randNumber == 3) {
-            $typesToSpawn['Very Rare']++; 
-        }
-        else {
+        if ($randNumber == 4) {
+            $typesToSpawn['Legendary']++;
+        } elseif ($randNumber == 3) {
+            $typesToSpawn['Very Rare']++;
+        } else {
             $typesToSpawn["Rare"]++;
         }
     }
