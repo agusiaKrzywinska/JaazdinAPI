@@ -1260,6 +1260,906 @@
                 "max": 9000
             },
             "type": "Fiend"
+        },
+        {
+            "name": "Carrion Ogre Heart",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Ettin Head",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Ogre Skin",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Verbeeg Toe",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Troll Blood",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Hill Giant Tooth",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Cyclops Eye",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Oni Brain",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Fire Giant Dreadnaut Tooth",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Spirit Troll Blood",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Death Giant Toe",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Storm Giant Toe",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Noble Fomorian Eye",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Giant"
+        },
+        {
+        "name": "Storm Giant Quintessent Ashes",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Frost Giant Ice Shaper Tooth",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Hundred-Handed Hand",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Scion of Grolantor Bone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Scion of Thrym Bone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Scion of Surtur Bone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Giant"
+        },
+        {
+            "name": "Scion of Memnor Bone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Cockatrice Beak",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Hippocamp Hoof",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Owlbeak Beak",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Xvart Nose",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Banderhobb Oil",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Roper Tendril",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Umber Hulk Eye",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Abominable Yeti Horn",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Froghemoth Eyestalk",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Behir Horn",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Remorhaz Stalk",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Sphinx Paw",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Purple Worm Blood",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Monstrosity"
+        },
+        {
+        "name": "Typhon Head",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Androsphinx Mane",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Nagpa Beak",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Hraptnon Tusk",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Gigant Wing",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Astral Dreadnaut Eye",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Tarrasque Blood",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Monstrosity"
+        },
+        {
+            "name": "Bag Jelly Ooze",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Ochre Jelly Jelly",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Gray Ooze Goo",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Black Pudding Ooze",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Adult Oblex Goo",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Dragonblood Ooze Goo",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Regenerating Black Pudding Slime",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Huge Gray Ooze Jelly",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Ancient Oblex Tendril",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Ancient Oblex Slime",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Massive Cube Ooze",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Onyx Pudding Slime",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Ancient Oblex Tendril",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Ooze"
+        },
+        {
+        "name": "Ancient Oblex Slime",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Dragonblood Corroder Goo",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Golden Slime Ooze",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Planar Consumer Ooze",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Ancient Dragonblood Slime",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Oblex Hive Goo",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Oblex Hive Tendril",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Ooze"
+        },
+        {
+            "name": "Shrieker Cap",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Gas Spore Skin",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Vine Blight Twig",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Vegepygmy Spores",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Carnivorous Flower Petal",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Shambling Mount Vine",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Tree Blight Bark",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Corpse Flower Petal",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Ordeal Tree Bark",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Ordeal Tree Seed",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Wraithroot Tree Bark",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Wraithroot Tree Seed",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Elder Scion Tree Flower",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Plant"
+        },
+        {
+        "name": "Ironoak Treant Bark",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Ironoak Treant Seed",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Blinding Rot Root",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Nobel Willow Treant Bark",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Nobel Willow Treant Seed",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Divine Treant Flower",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Solar Godflower Seed",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Plant"
+        },
+        {
+            "name": "Zombie Flesh",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Ghoul Fang",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Snow Maiden Ectoplasm",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Flameskull Fragment",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Allip Dust",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Bodak Head",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Skeletal Knight Bonemeal",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Nosferatu Fang",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Alhoon Tentacle",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Dullahan Head",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Vampire Ashes",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Boneclaw Claw",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Mummy Lord Wrappings",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Undead"
+        },
+        {
+        "name": "Skull Lord Skull",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Tempest Spirit Ectoplasm",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Dracolich Dust",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Demilich Gem",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Nightwalker Horn",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Lich Dust",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Undead"
+        },
+        {
+            "name": "Hourglass Widow Sand",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Undead"
         }
     ]
 }
