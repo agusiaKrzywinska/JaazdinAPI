@@ -637,5 +637,99 @@ function generateSeeds()
 //todo generate reagents
 function generateReagents()
 {
-    return null;
+    $goods = [];
+    $totalReagents = 4;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $totalReagents; $i++) {
+        $randNumber = rand(1, 20);
+        if ($randNumber == 20) {
+            $typesToSpawn['Legendary']++;
+        } elseif ($randNumber >= 16) {
+            $typesToSpawn["Very Rare"]++;
+        } elseif ($randNumber >= 13) {
+            $typesToSpawn["Rare"]++;
+        } elseif ($randNumber >= 3) {
+            $typesToSpawn["Uncommon"]++;
+        } else {
+            $typesToSpawn["Common"]++;
+        }
+    }
+
+    //generating all the beast types. 
+    $currentPetId = 0;
+    $petTypes = [];
+    for ($i = 0; $i < $totalReagents; $i++) {
+        $tempPetType = null;
+        $randNumber = rand(1, 12);
+        switch ($randNumber) {
+            case 1:
+                $tempPetType = "Aberration";
+                break;
+            case 2:
+                $tempPetType = "Celestial";
+                break;
+            case 3:
+                $tempPetType = "Construct";
+                break;
+            case 4:
+                $tempPetType = "Dragon";
+                break;
+            case 5:
+                $tempPetType = "Elemental";
+                break;
+            case 6:
+                $tempPetType = "Fey";
+                break;
+            case 7:
+                $tempPetType = "Fiend";
+                break;
+            case 8:
+                $tempPetType = "Giant";
+                break;
+            case 9:
+                $tempPetType = "Monstrosity";
+                break;
+            case 10:
+                $tempPetType = "Ooze";
+                break;
+            case 11:
+                $tempPetType = "Plant";
+                break;
+            case 12:
+                $tempPetType = "Undead";
+                break;
+        }
+        $petTypes[] = $tempPetType;
+
+    }
+
+    //generate all reagents
+    $currentPetId = 0;
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $finalCreatureType = $petTypes[$currentPetId];
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateReagent.php?rarity=$finalRarity&creatureType=$finalCreatureType";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempReagent = json_decode($contents);
+
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempReagent->name, 'quantity' => 1, 'price' => rand($tempReagent->price->min, $tempReagent->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+            $currentPetId++;
+        }
+    }
+    return $goods;
 }
