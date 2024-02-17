@@ -49,7 +49,7 @@
             }
         },
         {
-            "name": "Dragon's Gold",
+            "name": "Dragon`s Gold",
             "rarity": "Uncommon",
             "price": {
                 "min": 190,
@@ -65,7 +65,7 @@
             }
         },
         {
-            "name": "Tinker's Brass",
+            "name": "Tinker`s Brass",
             "rarity": "Uncommon",
             "price": {
                 "min": 165,
@@ -161,7 +161,7 @@
             }
         },
         {
-            "name": "Gor'Shorot",
+            "name": "Gor`Shorot",
             "rarity": "Rare",
             "price": {
                 "min": 290,
@@ -257,7 +257,7 @@
             }
         },
         {
-            "name": "Devil's Mercury",
+            "name": "Devil`s Mercury",
             "rarity": "Very Rare",
             "price": {
                 "min": 425,
@@ -345,7 +345,7 @@
             }
         },
         {
-            "name": "Warden's Copper",
+            "name": "Warden`s Copper",
             "rarity": "Very Rare",
             "price": {
                 "min": 460,
@@ -353,7 +353,7 @@
             }
         },
         {
-            "name": "ZuDark Platinum",
+            "name": "Dark Platinum",
             "rarity": "Very Rare",
             "price": {
                 "min": 465,

@@ -97,7 +97,7 @@
             }
         },
         {
-            "name": "Lion's Liquor",
+            "name": "Lion`s Liquor",
             "rarity": "Uncommon",
             "price": {
                 "min": 50,
@@ -201,7 +201,7 @@
             }
         },
         {
-            "name": "Carnivore's Delight",
+            "name": "Carnivore`s Delight",
             "rarity": "Rare",
             "price": {
                 "min": 200,
@@ -209,7 +209,7 @@
             }
         },
         {
-            "name": "Ocean's Bounty",
+            "name": "Ocean`s Bounty",
             "rarity": "Rare",
             "price": {
                 "min": 200,
@@ -225,7 +225,7 @@
             }
         },
         {
-            "name": "Devil's Skewer",
+            "name": "Devil`s Skewer",
             "rarity": "Very Rare",
             "price": {
                 "min": 240,
@@ -345,7 +345,7 @@
             }
         },
         {
-            "name": "Adventurerer's Stew",
+            "name": "Adventurerer`s Stew",
             "rarity": "Legendary",
             "price": {
                 "min": 425,

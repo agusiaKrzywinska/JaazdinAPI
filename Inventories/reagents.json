@@ -2,13 +2,544 @@
     "reagents":
     [
         {
-            "name": "Brown Bear",
-            "cr": 1,
+            "name": "Slaad Tadpole Tail",
+            "rarity": "Common",
             "price": {
-                "min": 100,
-                "max": 200
+                "min": 200,
+                "max": 400
             },
-            "type": "Beast"
+            "type": "Aberration"
+        },
+        {
+            "name": "Gazer Eye",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Gibbering Mouther Tooth",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Grell Beak",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Mindwitness Tendril",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Red Slaad Claw",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Woe Strider Hair",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Eyedrake Blood",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Aboleth Tentacle",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Mokoth Beak",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Beholder Eyestalk",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Star Spawn Seer Hand",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Elder Brain Tendril",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Elder Brain Brain",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Skittering Horror Leg",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Breath Drinker Smoke",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Star Spawn Larva Worm",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Cosmic Horror Blood",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Quori Essence",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Cosmic Horror Eye",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Aberration"
+        },
+        {
+            "name": "Babus Horn",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Pegasus Feathers",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Couatl Scale",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Hound Archon Fur",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Felidar Mane",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Unicorn Horn",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Angel Feather",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Ferrumach Gear",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Deva Blood",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Deva Feather",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Ki-rin Horn",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Firemane Angel Ember",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Triumvirate Eye",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Deathpact Angel Blood",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Deathpact Angel Feather",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Ashen Rider Hair",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Archaic Stone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Solar Feather",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Empyrean Head",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Planar Essence (Gold)",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Celestial"
+        },
+        {
+            "name": "Monodrone Gear",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Doudrone Gear",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Tridrone Gear",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Quadrone Gear",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Clockwork Bolter Chassis",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Tomb Guardian Flesh",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Scaladar Stinger",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Clay Golem Core",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Crystal Golem Seed",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Stone Golem Core",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Octon Gear",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Stone Juggernaut Wheel",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Cadaver Collector Plate",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Retiever Eye",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Hellfire Engine Ember",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Iron Golem Core",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Flesh Colossus Nexus",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Runic Colossus Rune",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Marut Gear",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Construct"
+        },
+        {
+            "name": "Warforged Colossus Core",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Construct"
         }
     ]
 }
