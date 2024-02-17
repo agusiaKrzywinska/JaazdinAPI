@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $goodName = $good["itemName"];
             $price = $good["price"];
             $quantity = $good["quantity"];
-            $message .= "$goodName (x$quantity $price gp)\n";
+            $message .= "x$quantity $goodName ($price gp)\n";
         }
         $message .= "\n";
         $message .= "While in town the merchants and sailors will help with $jobsAffected";

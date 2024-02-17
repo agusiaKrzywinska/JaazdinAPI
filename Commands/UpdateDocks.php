@@ -167,7 +167,6 @@ function generateMetals()
     return $goods;
 }
 
-//todo generate weaponry
 function generateWeaponry()
 {
     $goods = [];
@@ -207,7 +206,7 @@ function generateWeaponry()
                 $metalsInUse[$tempArmor->metal->name] = rand($tempArmor->metal->price->min, $tempArmor->metal->price->max);
             }
             //convert weapons to shipment items
-            $tempGood = array('name' => $tempArmor->metal->name . " " . $tempArmor->name, 'quantity' => 1, 'price' => $metalsInUse[$tempArmor->metal->name] * $tempArmor->plates * $tempArmor->price);
+            $tempGood = array('name' => $tempArmor->metal->name . " " . $tempArmor->name, 'quantity' => 1, 'price' => $metalsInUse[$tempArmor->metal->name] * $tempArmor->plates + $tempArmor->price);
             if (array_key_exists($tempGood['name'], $goods)) {
                 $goods[$tempGood['name']]['quantity']++;
             } else {
@@ -247,7 +246,7 @@ function generateWeaponry()
                 $metalsInUse[$tempWeapon->metal->name] = rand($tempWeapon->metal->price->min, $tempWeapon->metal->price->max);
             }
             //convert weapons to shipment items
-            $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => $metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates * $tempWeapon->price);
+            $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => $metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates + $tempWeapon->price);
             if (array_key_exists($tempGood['name'], $goods)) {
                 $goods[$tempGood['name']]['quantity']++;
             } else {
