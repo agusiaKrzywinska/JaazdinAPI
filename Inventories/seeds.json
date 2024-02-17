@@ -57,7 +57,7 @@
             }
         },
         {
-            "name": "St. Clem's Candle",
+            "name": "St. Clem`s Candle",
             "rarity": "Common",
             "price": {
                 "min": 25,
@@ -65,7 +65,7 @@
             }
         },
         {
-            "name": "Hiker's Bounty",
+            "name": "Hiker`s Bounty",
             "rarity": "Uncommon",
             "price": {
                 "min": 65,
@@ -97,7 +97,7 @@
             }
         },
         {
-            "name": "Drow's Wine Glass",
+            "name": "Drow`s Wine Glass",
             "rarity": "Uncommon",
             "price": {
                 "min": 70,
@@ -113,7 +113,7 @@
             }
         },
         {
-            "name": "Devil's Cactus",
+            "name": "Devil`s Cactus",
             "rarity": "Uncommon",
             "price": {
                 "min": 80,
@@ -137,7 +137,7 @@
             }
         },
         {
-            "name": "Ocean's Lily",
+            "name": "Ocean`s Lily",
             "rarity": "Rare",
             "price": {
                 "min": 140,
@@ -177,7 +177,7 @@
             }
         },
         {
-            "name": "Mystic Mage's Elm",
+            "name": "Mystic Mage`s Elm",
             "rarity": "Rare",
             "price": {
                 "min": 300,
@@ -217,7 +217,7 @@
             }
         },
         {
-            "name": "Siren's Cap",
+            "name": "Siren`s Cap",
             "rarity": "Very Rare",
             "price": {
                 "min": 225,
@@ -273,7 +273,7 @@
             }
         },
         {
-            "name": "Dragon's Rose",
+            "name": "Dragon`s Rose",
             "rarity": "Legendary",
             "price": {
                 "min": 400,
@@ -281,7 +281,7 @@
             }
         },
         {
-            "name": "Sage's Cap",
+            "name": "Sage`s Cap",
             "rarity": "Legendary",
             "price": {
                 "min": 425,
