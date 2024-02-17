@@ -206,7 +206,7 @@ function generateWeaponry()
                 $metalsInUse[$tempArmor->metal->name] = rand($tempArmor->metal->price->min, $tempArmor->metal->price->max);
             }
             //convert weapons to shipment items
-            $tempGood = array('name' => $tempArmor->metal->name . " " . $tempArmor->name, 'quantity' => 1, 'price' => $metalsInUse[$tempArmor->metal->name] * $tempArmor->plates + $tempArmor->price);
+            $tempGood = array('name' => $tempArmor->metal->name . " " . $tempArmor->name, 'quantity' => 1, 'price' => round(($metalsInUse[$tempArmor->metal->name] * $tempArmor->plates + $tempArmor->price) * 1.33));
             if (array_key_exists($tempGood['name'], $goods)) {
                 $goods[$tempGood['name']]['quantity']++;
             } else {
@@ -246,7 +246,7 @@ function generateWeaponry()
                 $metalsInUse[$tempWeapon->metal->name] = rand($tempWeapon->metal->price->min, $tempWeapon->metal->price->max);
             }
             //convert weapons to shipment items
-            $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => $metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates + $tempWeapon->price);
+            $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => round(($metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates + $tempWeapon->price) * 1.33));
             if (array_key_exists($tempGood['name'], $goods)) {
                 $goods[$tempGood['name']]['quantity']++;
             } else {
@@ -320,7 +320,7 @@ function generatePets()
 
     }
 
-    //generate all armors
+    //generate all pets
     $currentPetId = 0;
     foreach ($typesToSpawn as $rarity => $amount) {
         for ($i = 0; $i < $amount; $i++) {
@@ -511,7 +511,6 @@ function generatePoisonsPotions()
     return $goods;
 }
 
-//todo generate magic items
 function generateMagicItems()
 {
     $goods = [];
