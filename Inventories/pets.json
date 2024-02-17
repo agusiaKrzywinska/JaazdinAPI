@@ -1457,7 +1457,7 @@
                 "min": 140,
                 "max": 190
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Gibbering Mouther",
@@ -1466,7 +1466,7 @@
                 "min": 1000,
                 "max": 1200
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Flying Horror",
@@ -1475,7 +1475,7 @@
                 "min": 1100,
                 "max": 1300
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Chaos Quadrapod",
@@ -1484,7 +1484,7 @@
                 "min": 1200,
                 "max": 1400
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Scuttling Serpentmaw",
@@ -1493,7 +1493,7 @@
                 "min": 1200,
                 "max": 1400
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Feyr",
@@ -1502,7 +1502,7 @@
                 "min": 1300,
                 "max": 1500
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Light Devourer",
@@ -1511,7 +1511,7 @@
                 "min": 2800,
                 "max": 3000
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Shadow Horror",
@@ -1520,7 +1520,7 @@
                 "min": 19000,
                 "max": 21000
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Slithering Bloodfin",
@@ -1529,7 +1529,7 @@
                 "min": 19000,
                 "max": 21000
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Death Embrace",
@@ -1538,7 +1538,7 @@
                 "min": 21000,
                 "max": 23000
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Neothelid",
@@ -1547,7 +1547,7 @@
                 "min": 49000,
                 "max": 51000
             },
-            "type": "Abberation"
+            "type": "Aberration"
         },
         {
             "name": "Oblex Spawn",
