@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 
     if (isset($_GET['creatureType'])) {
-        $type = str_replace('%20', ' ', $rarity);
+        $type = $_GET['creatureType'];
     } else {
         $parameters = json_decode(file_get_contents("php://input"));
         $type = $parameters->creatureType;
