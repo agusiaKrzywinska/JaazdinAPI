@@ -540,6 +540,726 @@
                 "max": 9000
             },
             "type": "Construct"
+        },
+        {
+            "name": "Brass Wyrmling Blood",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Black Wyrmling Blood",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Emerald Wyrmling Blood",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Silver Wyrmling Blood",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Wyvern Tail",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Young Sea Serpent Fang",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Young Blue Dragon Blood",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Young Solar Dragon Heart",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Crystal Dragon Seed",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "White Dragon Blood",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Jabberwock Tongue",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Copper Dragon Fang",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Dragon Turtle Shell",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Silver Dragon Blood",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Red Dragon Heart",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Emerald Dragon Wing",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Ancient Moonstone Dragon Blood",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Ancient Green Dragon Heart",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Ancient Time Dragon Horn",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Ancient Gold Dragon Scale",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Dragon"
+        },
+        {
+            "name": "Chwinga Cadavar",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Mephit Claw",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Azer Bronze",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Flail Snail Shell",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Elemental Essence (1d4)",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Xorn Eye",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Galeb Duhr Stone",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Frost Salamander Heart",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Tlexolotl Ashes",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Dao Hand",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Djinni Eye",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Arclight Phoenix Egg",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Phoenix Egg",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Phoenix Ashes",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Phoenix Feather",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Phoenix Wing",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Leviathan Tide",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Zaratan Shell",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Elder Tempest Sparks",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Scion Core",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Elemental"
+        },
+        {
+            "name": "Boggle Oil",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Dryad Sap",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Darkling Elder Ashes",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Sea Hag Eye",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Dusk Hag Skin",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Korred Hair",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Conclave Dryad Bark",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Bheur Hag Skin",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Eladrin Blood (1d4)",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Infiltrator Eye",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Riverine Hair",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Riverine Heart",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Trostani Hair",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Trostani Heart",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Trostani Eye",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Trostani Blood",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Archfey Heart",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Archfey Eye",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Archfey Hair",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Archfey Finger",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fey"
+        },
+        {
+            "name": "Abyssal Chicken Feather",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Imp Tail",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Vargouille Wing",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Incubus Head",
+            "rarity": "Common",
+            "price": {
+                "min": 200,
+                "max": 400
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Barbed Devil Skin",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Mezzoloth Eye",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Eater of Hope Horn",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Bone Devil Blood",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 600,
+                "max": 900
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Yochlol Goo",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Horned Devil Horn",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Erinyes Blood",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Nalfeshnee Stomach",
+            "rarity": "Rare",
+            "price": {
+                "min": 1500,
+                "max": 2500
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Green Abishai Fang",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Nabassu Horn",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Marilith Tail",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Goristro Blood",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 3000,
+                "max": 4000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Amnizu Fat",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Bael Horn",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Balor Lightning",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fiend"
+        },
+        {
+            "name": "Pit Fiend Blood",
+            "rarity": "Legendary",
+            "price": {
+                "min": 6000,
+                "max": 9000
+            },
+            "type": "Fiend"
         }
     ]
 }
