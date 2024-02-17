@@ -259,7 +259,6 @@ function generateWeaponry()
     return $goods;
 }
 
-//todo generate pets. 
 function generatePets()
 {
     $goods = [];
@@ -281,7 +280,7 @@ function generatePets()
         }
     }
 
-    $invalidCombinations = array("Common" => array(), "Uncommon" => array(), "Rare" => array("Ooze"), "Very Rare" => array("Beat", "Ooze", "Dragon"), "Legendary" => array("Beast", "Ooze"));
+    $invalidCombinations = array("Common" => array(), "Uncommon" => array(), "Rare" => array("Ooze"), "Very Rare" => array("Beast", "Ooze", "Dragon"), "Legendary" => array("Beast", "Ooze"));
     //generating all the beast types. 
     $currentPetId = 0;
     $petTypes = [];
@@ -337,10 +336,9 @@ function generatePets()
             $context = stream_context_create($options);
             $contents = file_get_contents($url, false, $context);
             $tempPet = json_decode($contents);
-            var_dump($contents);
 
             //convert weapons to shipment items
-            $tempGood = array('name' => $tempPet->name, 'quantity' => 1, 'price' => $tempPet->price->min, $tempPet->price->max);
+            $tempGood = array('name' => $tempPet->name, 'quantity' => 1, 'price' =>  rand($tempPet->price->min, $tempPet->price->max));
             if (array_key_exists($tempGood['name'], $goods)) {
                 $goods[$tempGood['name']]['quantity']++;
             } else {
