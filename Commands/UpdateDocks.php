@@ -338,7 +338,7 @@ function generatePets()
             $tempPet = json_decode($contents);
 
             //convert weapons to shipment items
-            $tempGood = array('name' => $tempPet->name, 'quantity' => 1, 'price' =>  rand($tempPet->price->min, $tempPet->price->max));
+            $tempGood = array('name' => $tempPet->name, 'quantity' => 1, 'price' => rand($tempPet->price->min, $tempPet->price->max));
             if (array_key_exists($tempGood['name'], $goods)) {
                 $goods[$tempGood['name']]['quantity']++;
             } else {
@@ -514,7 +514,57 @@ function generatePoisonsPotions()
 //todo generate magic items
 function generateMagicItems()
 {
-    return null;
+    $goods = [];
+    $startingA = 5;
+    $startingB = 3;
+    $typesToSpawn = array("A" => 0, "B" => 0, "C" => 0, "D" => 0, );
+
+    for ($i = 0; $i < $startingA; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 6) {
+            $typesToSpawn['C']++;
+        } elseif ($randNumber == 5) {
+            $typesToSpawn["B"]++;
+        } else {
+            $typesToSpawn["A"]++;
+        }
+    }
+
+    for ($i = 0; $i < $startingB; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 6) {
+            $typesToSpawn['D']++;
+        } elseif ($randNumber == 5) {
+            $typesToSpawn["C"]++;
+        } else {
+            $typesToSpawn["B"]++;
+        }
+    }
+
+    //generate all magic items
+    foreach ($typesToSpawn as $table => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMagicItem.php?table=$table";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempMagicItem = json_decode($contents);
+            //convert magic items to shipment items
+            $tempGood = array('name' => $tempMagicItem->name, 'quantity' => 1, 'price' => rand($tempMagicItem->price->min, $tempMagicItem->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+
+    return $goods;
 }
 
 function generateSeeds()
