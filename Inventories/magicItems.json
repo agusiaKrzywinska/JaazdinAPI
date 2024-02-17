@@ -145,7 +145,7 @@
             }
         },
         {
-            "name": "Charlatan's Dice",
+            "name": "Charlatan`s Dice",
             "table": "B",
             "roll": {
                 "min": 35,
@@ -265,7 +265,7 @@
             }
         },
         {
-            "name": "Mariner's Armor",
+            "name": "Mariner`s Armor",
             "table": "B",
             "roll": {
                 "min": 76,
@@ -721,7 +721,7 @@
             }
         },
         {
-            "name": "Knave's Eye Patch",
+            "name": "Knave`s Eye Patch",
             "table": "C",
             "roll": {
                 "min": 90,
