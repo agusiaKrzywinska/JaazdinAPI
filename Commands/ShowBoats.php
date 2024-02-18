@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $message .= "x$quantity $goodName ($price gp)\n";
         }
         $message .= "\n";
-        $message .= "While in town the merchants and sailors will help with $jobsAffected";
+        $message .= "While in town the merchants and sailors will help with $jobsAffected and grant players a bonus wage die while working those jobs this week";
         if ($isTier2 == 1) {
             $message .= " and $tier2Ability\n\n";
         } else {
