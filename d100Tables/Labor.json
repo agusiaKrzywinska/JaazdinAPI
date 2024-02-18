@@ -7,70 +7,70 @@
         }
     },
     {
-        "bonus": "Gain a 1st level spell scroll (Random)",
+        "bonus": "Lower the cost of a future construction by 100gp (Stacks up to 1000gp).",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 30 or combined by 1 week",
+        "bonus": "GP Die +2",
         "roll": {
             "min": 41,
             "max": 55
         }
     },
     {
-        "bonus": "GP Die +2",
+        "bonus": "Lower the cost of a future construction by 200gp (Stacks up to 1000gp).",
         "roll": {
             "min": 56,
             "max": 70
         }
     },
     {
-        "bonus": "Gain a 2nd level spell scroll (Random)",
+        "bonus": "GP Die +3",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Make use of one built faculty's tier 3 ability.",
+        "bonus": "GP Die +4",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 60 or combined by 2 weeks",
+        "bonus": "Speed up any construction within town by 1 week.",
         "roll": {
             "min": 96,
             "max": 105
         }
     },
     {
-        "bonus": "GP Die +3",
+        "bonus": "GP Die +5",
         "roll": {
             "min": 106,
             "max": 115
         }
     },
     {
-        "bonus": "Gain a 3rd level spell scroll (Random)",
+        "bonus": "Speed up any construction within town by 2 week.",
         "roll": {
             "min": 116,
             "max": 125
         }
     },
     {
-        "bonus": "GP Die +4",
+        "bonus": "GP Die +6",
         "roll": {
             "min": 126,
             "max": 135
         }
     },
     {
-        "bonus": "Make use of two built faculty's Tier 3 ability.",
+        "bonus": "Immediately finish any construction project in town.",
         "roll": {
             "min": 135,
             "max": 300

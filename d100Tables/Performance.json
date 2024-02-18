@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Gain a 1st level spell scroll (Random)",
+        "bonus": "Gain Inspiration for the next quest.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 30 or combined by 1 week",
+        "bonus": "Add 1d6 to any d20 roll during this downtime.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Gain a 2nd level spell scroll (Random)",
+        "bonus": "Add 1d8 to any d20 roll during this downtime.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Make use of one built faculty's tier 3 ability.",
+        "bonus": "You and one ally get Inspiration on their next quest.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 60 or combined by 2 weeks",
+        "bonus": "Another player can reroll a d20 during this downtime.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Gain a 3rd level spell scroll (Random)",
+        "bonus": "Add 2d6 to any d20 roll during this downtime.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Make use of two built faculty's Tier 3 ability.",
+        "bonus": "Two players can add 1d10 to a d20 roll during this downtime.",
         "roll": {
             "min": 135,
             "max": 300

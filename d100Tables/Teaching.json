@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Gain a 1st level spell scroll (Random)",
+        "bonus": "The next Language Proficiency learned is learned 1 week faster.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 30 or combined by 1 week",
+        "bonus": "The next Proficiency learned is learned 1 week faster.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Gain a 2nd level spell scroll (Random)",
+        "bonus": "You can immediately make a History check.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Make use of one built faculty's tier 3 ability.",
+        "bonus": "You gain knowledge of something neat.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 60 or combined by 2 weeks",
+        "bonus": "The next Proficiency learned is learned your Proficiency Bonus weeks faster.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Gain a 3rd level spell scroll (Random)",
+        "bonus": "You learn a Magic Item Recipe, roll (1d10).",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Make use of two built faculty's Tier 3 ability.",
+        "bonus": "The next Proficiency learned takes 1 week to learn.",
         "roll": {
             "min": 135,
             "max": 300

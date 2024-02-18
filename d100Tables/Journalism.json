@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Gain a 1st level spell scroll (Random)",
+        "bonus": "Learn of something in town.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 30 or combined by 1 week",
+        "bonus": "Learn of something in the country.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Gain a 2nd level spell scroll (Random)",
+        "bonus": "Persuasion check to attempt to push a group's views.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Make use of one built faculty's tier 3 ability.",
+        "bonus": "Learn of something abroad.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 60 or combined by 2 weeks",
+        "bonus": "Persuasion check to attempt to push a city's views.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Gain a 3rd level spell scroll (Random)",
+        "bonus": "Persuasion check to attempt to push a region's views.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Make use of two built faculty's Tier 3 ability.",
+        "bonus": "Persuasion check to attempt to push a kingdom's views.",
         "roll": {
             "min": 135,
             "max": 300

@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Gain a 1st level spell scroll (Random)",
+        "bonus": "Grant an ally Prof Bonus xd6 Temp HP next quest.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 30 or combined by 1 week",
+        "bonus": "Grant all allies ADV on poison saves next quest.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Gain a 2nd level spell scroll (Random)",
+        "bonus": "Grant two allies Prof Bonus xd6 Temp HP on the next quest.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Make use of one built faculty's tier 3 ability.",
+        "bonus": "Great an Antitoxin.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Increase the progress of one magic item being crafted by 60 or combined by 2 weeks",
+        "bonus": "Grant all allies Prof Bonus xd6 Temp HP on their next quest.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Gain a 3rd level spell scroll (Random)",
+        "bonus": "Create a medical pounch.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Make use of two built faculty's Tier 3 ability.",
+        "bonus": "Grant Allies ADV on death saves on their next quest.",
         "roll": {
             "min": 135,
             "max": 300
