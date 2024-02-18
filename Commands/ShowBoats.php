@@ -8,48 +8,44 @@ if ($connection->connect_error) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-    $message = '';
+    $message = array();
     //getting boats not in port.
-    $sqlGetBoatsArentInTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 0;";
+    $sqlGetBoatsArentInTown = "SELECT boatName, weeksLeft FROM boats WHERE isRunning = 1 AND isInTown = 0;";
     $result = $connection->query($sqlGetBoatsArentInTown);
+
+    $boatsNotInTown = array();
     while ($row = $result->fetch_assoc()) {
-        $boatName = $row["boatName"];
-        $weeksLeft = $row["weeksLeft"];
-        $message .= "$boatName is $weeksLeft weeks away from port.\n";
+        $boatsNotInTown[] = array("boatName" => $row["boatName"], "weeksLeft" => $row["weeksLeft"]);
     }
 
+
+    $boatsInTown = array();
     //getting boats that are in port. 
     $sqlGetBoatsInTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 1;";
     $result = $connection->query($sqlGetBoatsInTown);
     while ($row = $result->fetch_assoc()) {
-        $boatName = $row["boatName"];
-        $weeksLeft = $row["weeksLeft"];
-        $jobsAffected = $row["jobsAffected"];
         $shipmentType = $row["tableToGenerate"];
-        $isTier2 = $row["isTier2"];
-        $tier2Ability = $row["tier2Ability"];
-
-        $message .= "$boatName is in town for $weeksLeft weeks bringing:\n";
 
         //getting the shipment items and printing those
         $sqlGetShipment = "SELECT * FROM $shipmentType;";
         $resultLoop = $connection->query($sqlGetShipment);
+
+        $goods = array();
         while ($good = $resultLoop->fetch_assoc()) {
             $goodName = $good["itemName"];
             $price = $good["price"];
             $quantity = $good["quantity"];
-            $message .= "x$quantity $goodName ($price gp)\n";
+            $goods[] = array("name" => $goodName, "price" => $price, "quantity" => $quantity);
         }
-        $message .= "\n";
-        $message .= "While in town the merchants and sailors will help with $jobsAffected and grant players a bonus wage die while working those jobs this week";
-        if ($isTier2 == 1) {
-            $message .= " and $tier2Ability\n\n";
-        } else {
-            $message .= ". \n\n";
-        }
+
+        $tier2 = $row["isTier2"] == 1 ? $row["tier2Ability"] : "";
+
+        $boatsInTown[] = array("boatName" => $row["boatName"], "weeksLeft" => $row["weeksLeft"], "jobs" => $row["jobsAffected"], "shipment" => $goods, "tier2Ability" => $tier2);
     }
 
-    echo json_encode(array('message'=>$message));
+    $message = array("boatsNotInTown" => $boatsNotInTown, "boatsInTown" => $boatsInTown);
+
+    echo json_encode($message);
 }
 
 $connection->close();

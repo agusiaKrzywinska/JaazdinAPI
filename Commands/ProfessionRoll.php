@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $jobsAffected = explode(' ', $row["jobsAffected"]);
         $isTier2 = $row["isTier2"];
         for ($i = 0; $i < count($jobsAffected); $i++) {
-            if ($jobsAffected == $job) {
+            if ($jobsAffected[$i] == $job) {
                 $roll += $isTier2 == 1 ? 15 : 10;
             }
         }
