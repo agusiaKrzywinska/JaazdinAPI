@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
 
-    echo $message;
+    echo json_encode(array('message'=>$message));
 }
 
 $connection->close();
