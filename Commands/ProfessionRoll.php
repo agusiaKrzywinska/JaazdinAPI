@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
     //return bonus message. 
-    echo json_encode(array($message));
+    echo json_encode(array('message' => "($roll) $message"));
 }
 
 $connection->close();
