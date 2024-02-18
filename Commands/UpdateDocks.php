@@ -634,7 +634,6 @@ function generateSeeds()
     return $goods;
 }
 
-//todo generate reagents
 function generateReagents()
 {
     $goods = [];
