@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $message = array();
     //getting boats not in port.
-    $sqlGetBoatsArentInTown = "SELECT boatName, weeksLeft FROM boats WHERE isRunning = 1 AND isInTown = 0;";
+    $sqlGetBoatsArentInTown = "SELECT boatName, weeksLeft FROM boats WHERE isRunning = 1 AND isInTown = 0 ORDER BY weeksLeft ASC;";
     $result = $connection->query($sqlGetBoatsArentInTown);
 
     $boatsNotInTown = array();
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $boatsInTown = array();
     //getting boats that are in port. 
-    $sqlGetBoatsInTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 1;";
+    $sqlGetBoatsInTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 1 ORDER BY weeksLeft ASC;";
     $result = $connection->query($sqlGetBoatsInTown);
     while ($row = $result->fetch_assoc()) {
         $shipmentType = $row["tableToGenerate"];
