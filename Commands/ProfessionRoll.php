@@ -30,12 +30,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $parameters = json_decode(file_get_contents("php://input"));
         $job = $parameters->job;
     }
+    
+    $startingRoll = $roll;
 
     //add tier bonus if any
     if ($tier > 3) {
         $roll += ($tier - 3) * 10;
     }
-
+	
+    $boatsAffected = ''; 
     //add boat bonus if its in town and applied profession
     $sqlGetBoatsInTown = "SELECT * FROM boats WHERE isRunning = 1 AND isInTown = 1;";
     $result = $connection->query($sqlGetBoatsInTown);
@@ -45,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         for ($i = 0; $i < count($jobsAffected); $i++) {
             if ($jobsAffected[$i] == $job) {
                 $roll += $isTier2 == 1 ? 15 : 10;
+                $boatsAffected .= " " . $row['boatName'];
             }
         }
     }
@@ -62,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
     //return bonus message. 
-    echo json_encode(array('message' => "($roll) $message"));
+    echo json_encode(array('message' => "(base $startingRoll, @tier $tier$boatsAffected, final Result: $roll) $message"));
 }
 
 $connection->close();

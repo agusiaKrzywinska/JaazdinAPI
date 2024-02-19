@@ -25,17 +25,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $connection->query($sqlGetBoatsInTown);
     while ($row = $result->fetch_assoc()) {
         $shipmentType = $row["tableToGenerate"];
+        if ($shipmentType != "N/A") {
+            //getting the shipment items and printing those
+            $sqlGetShipment = "SELECT * FROM $shipmentType;";
+            $resultLoop = $connection->query($sqlGetShipment);
 
-        //getting the shipment items and printing those
-        $sqlGetShipment = "SELECT * FROM $shipmentType;";
-        $resultLoop = $connection->query($sqlGetShipment);
-
-        $goods = array();
-        while ($good = $resultLoop->fetch_assoc()) {
-            $goodName = $good["itemName"];
-            $price = $good["price"];
-            $quantity = $good["quantity"];
-            $goods[] = array("name" => $goodName, "price" => $price, "quantity" => $quantity);
+            $goods = array();
+            while ($good = $resultLoop->fetch_assoc()) {
+                $goodName = $good["itemName"];
+                $price = $good["price"];
+                $quantity = $good["quantity"];
+                $goods[] = array("name" => $goodName, "price" => $price, "quantity" => $quantity);
+            }
         }
 
         $tier2 = $row["isTier2"] == 1 ? $row["tier2Ability"] : "";

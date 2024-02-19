@@ -75,6 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             case "plants":
                 $goods = generateSeeds();
                 break;
+            default:
+                $goods = array();
+                break;
         }
 
         foreach ($goods as $name => $data) {
