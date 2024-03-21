@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $connection->query($sqlGetBoatsInTown);
     while ($row = $result->fetch_assoc()) {
         $shipmentType = $row["tableToGenerate"];
-        if ($shipmentType != "N/A") {
+        if ($shipmentType != "NA") {
             //getting the shipment items and printing those
             $sqlGetShipment = "SELECT * FROM $shipmentType;";
             $resultLoop = $connection->query($sqlGetShipment);

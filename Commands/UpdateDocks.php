@@ -75,6 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             case "plants":
                 $goods = generateSeeds();
                 break;
+            case "smuggle":
+                $goods = generateSmuggled();
+                break;
             default:
                 $goods = array();
                 break;
@@ -116,6 +119,217 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 $connection->close();
+
+function generateSmuggled()
+{
+    $goods = [];
+
+    $metalsInUse = array("NA" => 0);
+
+    for ($itemNumber = 0; $itemNumber < 4; $itemNumber++) {
+        $randNumber = rand(1, 8);
+        $rarity = "";
+        $randRarity = rand(1, 6);
+        
+        // it's on the magic item table 
+        if ($randNumber == 8) {
+            if ($randRarity == 6) {
+                $rarity = "C";
+            } else if ($randRarity == 5) {
+                $rarity = "B";
+            } else {
+                $rarity = "A";
+            }
+        }
+        //calculate rarity of item
+        else {
+            if ($randRarity == 6) {
+                $rarity = "Very Rare";
+            } else if ($randRarity == 5) {
+                $rarity = "Rare";
+            } else {
+                $rarity = "Uncommon";
+            }
+        }
+
+        switch ($randNumber) {
+            // generate metal
+            case 1:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMetal.php?rarity=$finalRarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempMetal = json_decode($contents);
+                //convert metals to shipment items
+                $tempGood = array('name' => $tempMetal->name, 'quantity' => 1, 'price' => rand($tempMetal->price->min, $tempMetal->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate weapon
+            case 2:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateWeapon.php?rarity=$finalRarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempWeapon = json_decode($contents);
+                if (array_key_exists($tempWeapon->metal->name, $metalsInUse) == false) {
+                    $metalsInUse[$tempWeapon->metal->name] = rand($tempWeapon->metal->price->min, $tempWeapon->metal->price->max);
+                }
+                //convert weapons to shipment items
+                $tempGood = array('name' => $tempWeapon->metal->name . " " . $tempWeapon->name, 'quantity' => 1, 'price' => round(($metalsInUse[$tempWeapon->metal->name] * $tempWeapon->plates + $tempWeapon->price) * 1.33));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate meal
+            case 3:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMeal.php?rarity=$finalRarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempMeal = json_decode($contents);
+                //convert metals to shipment items
+                $tempGood = array('name' => $tempMeal->name, 'quantity' => 1, 'price' => rand($tempMeal->price->min, $tempMeal->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate potion
+            case 4:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GeneratePotion.php?rarity=$finalRarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempPotion = json_decode($contents);
+                //convert metals to shipment items
+                $tempGood = array('name' => $tempPotion->name, 'quantity' => 1, 'price' => rand($tempPotion->price->min, $tempPotion->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate poison
+            case 5:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GeneratePoison.php?rarity=$finalRarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempPoison = json_decode($contents);
+                //convert metals to shipment items
+                $tempGood = array('name' => $tempPoison->name, 'quantity' => 1, 'price' => rand($tempPoison->price->min, $tempPoison->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate monster reagent
+            case 6:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $randType = rand(1, 12);
+                $finalCreatureType = getMonsterType($randType);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateReagent.php?rarity=$finalRarity&creatureType=$finalCreatureType";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempReagent = json_decode($contents);
+                //convert weapons to shipment items
+                $tempGood = array('name' => $tempReagent->name, 'quantity' => 1, 'price' => rand($tempReagent->price->min, $tempReagent->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate plant
+            case 7:
+                $finalRarity = str_replace(' ', '%20', $rarity);
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateSeeds.php?rarity=$finalRarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempSeed = json_decode($contents);
+                //convert metals to shipment items
+                $tempGood = array('name' => $tempSeed->name, 'quantity' => 1, 'price' => rand($tempSeed->price->min, $tempSeed->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+            // generate magic item
+            case 8:
+                $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMagicItem.php?table=$rarity";
+                $options = [
+                    'http' => [
+                        'header' => "Content-type: application/json",
+                        'method' => 'GET'
+                    ],
+                ];
+                $context = stream_context_create($options);
+                $contents = file_get_contents($url, false, $context);
+                $tempMagicItem = json_decode($contents);
+                //convert magic items to shipment items
+                $tempGood = array('name' => $tempMagicItem->name, 'quantity' => 1, 'price' => rand($tempMagicItem->price->min, $tempMagicItem->price->max));
+                if (array_key_exists($tempGood['name'], $goods)) {
+                    $goods[$tempGood['name']]['quantity']++;
+                } else {
+                    $goods[$tempGood['name']] = $tempGood;
+                }
+                break;
+        }
+    }
+    
+    return $goods;
+}
 
 function generateMetals()
 {
@@ -662,47 +876,8 @@ function generateReagents()
     $currentPetId = 0;
     $petTypes = [];
     for ($i = 0; $i < $totalReagents; $i++) {
-        $tempPetType = null;
         $randNumber = rand(1, 12);
-        switch ($randNumber) {
-            case 1:
-                $tempPetType = "Aberration";
-                break;
-            case 2:
-                $tempPetType = "Celestial";
-                break;
-            case 3:
-                $tempPetType = "Construct";
-                break;
-            case 4:
-                $tempPetType = "Dragon";
-                break;
-            case 5:
-                $tempPetType = "Elemental";
-                break;
-            case 6:
-                $tempPetType = "Fey";
-                break;
-            case 7:
-                $tempPetType = "Fiend";
-                break;
-            case 8:
-                $tempPetType = "Giant";
-                break;
-            case 9:
-                $tempPetType = "Monstrosity";
-                break;
-            case 10:
-                $tempPetType = "Ooze";
-                break;
-            case 11:
-                $tempPetType = "Plant";
-                break;
-            case 12:
-                $tempPetType = "Undead";
-                break;
-        }
-        $petTypes[] = $tempPetType;
+        $petTypes[] = getMonsterType($randNumber);
 
     }
 
@@ -734,4 +909,48 @@ function generateReagents()
         }
     }
     return $goods;
+}
+
+function getMonsterType($randNumber)
+{
+    $tempPetType = null;
+    switch ($randNumber) {
+        case 1:
+            $tempPetType = "Aberration";
+            break;
+        case 2:
+            $tempPetType = "Celestial";
+            break;
+        case 3:
+            $tempPetType = "Construct";
+            break;
+        case 4:
+            $tempPetType = "Dragon";
+            break;
+        case 5:
+            $tempPetType = "Elemental";
+            break;
+        case 6:
+            $tempPetType = "Fey";
+            break;
+        case 7:
+            $tempPetType = "Fiend";
+            break;
+        case 8:
+            $tempPetType = "Giant";
+            break;
+        case 9:
+            $tempPetType = "Monstrosity";
+            break;
+        case 10:
+            $tempPetType = "Ooze";
+            break;
+        case 11:
+            $tempPetType = "Plant";
+            break;
+        case 12:
+            $tempPetType = "Undead";
+            break;
+    }
+    return $tempPetType;
 }
