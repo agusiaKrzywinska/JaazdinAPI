@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "Lower the cost of a future construction by 100gp (Stacks up to 1000gp).",
+        "bonus": "Lower the cost of a future construction by 100gp (Stacks up to 1000gp) or gain one additional wage die.",
         "roll": {
             "min": 21,
             "max": 40
@@ -21,7 +21,7 @@
         }
     },
     {
-        "bonus": "Lower the cost of a future construction by 200gp (Stacks up to 1000gp).",
+        "bonus": "Lower the cost of a future construction by 200gp (Stacks up to 1000gp) or gain two additional wage dice.",
         "roll": {
             "min": 56,
             "max": 70
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Speed up any construction within town by 1 week.",
+        "bonus": "Speed up any construction within town by 1 week or gain 5gp for each built building in town.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Speed up any construction within town by 2 week.",
+        "bonus": "Speed up any construction within town by 2 week or gain 10gp for each built building in town.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Immediately finish any construction project in town.",
+        "bonus": "Immediately finish any construction project in town or make use of any building in town that requires downtime to use.",
         "roll": {
             "min": 135,
             "max": 300
