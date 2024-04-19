@@ -1,0 +1,79 @@
+[
+    {
+        "bonus": "GP Die +1",
+        "roll": {
+            "min": 1,
+            "max": 20
+        }
+    },
+    {
+        "bonus": "Offer of gems (50gp) (Roll 1d6).",
+        "roll": {
+            "min": 21,
+            "max": 40
+        }
+    },
+    {
+        "bonus": "Immediately attempt a Gem Craft check with a 1 Lower DC.",
+        "roll": {
+            "min": 41,
+            "max": 55
+        }
+    },
+    {
+        "bonus": "GP Die +2",
+        "roll": {
+            "min": 56,
+            "max": 70
+        }
+    },
+    {
+        "bonus": "Offer of Gems (100gp) (Roll 1d6).",
+        "roll": {
+            "min": 71,
+            "max": 85
+        }
+    },
+    {
+        "bonus": "Offer of Rare Gems (250gp) (Roll 1d4).",
+        "roll": {
+            "min": 86,
+            "max": 95
+        }
+    },
+    {
+        "bonus": "Immediately attempt a Gem Craft check with a 2 Lower DC.",
+        "roll": {
+            "min": 96,
+            "max": 105
+        }
+    },
+    {
+        "bonus": "GP Die +3",
+        "roll": {
+            "min": 106,
+            "max": 115
+        }
+    },
+    {
+        "bonus": "Offer of Gems (500gp) (1d6).",
+        "roll": {
+            "min": 116,
+            "max": 125
+        }
+    },
+    {
+        "bonus": "GP Die +4",
+        "roll": {
+            "min": 126,
+            "max": 135
+        }
+    },
+    {
+        "bonus": "Immediately attempt a Gem Craft check with a 3 Lower DC.",
+        "roll": {
+            "min": 135,
+            "max": 300
+        }
+    }
+]
