@@ -137,6 +137,14 @@
             }
         },
         {
+            "name": "Wyrm Platinum",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 410
+            }
+        },
+        {
             "name": "Adamantine",
             "rarity": "Rare",
             "price": {

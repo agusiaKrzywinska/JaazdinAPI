@@ -129,6 +129,14 @@
             }
         },
         {
+            "name": "Blistercoil",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 100,
+                "max": 110
+            }
+        },
+        {
             "name": "Aquatice Companion",
             "rarity": "Rare",
             "price": {
