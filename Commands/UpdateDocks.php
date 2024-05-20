@@ -39,16 +39,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $connection->query($sqlGetBoatsInTownFirstWeek);
 
     while ($row = $result->fetch_assoc()) {
+
         $type = $row["tableToGenerate"];
 
-        $sqlCreateTable = "CREATE TABLE $type (
-            id int NOT NULL AUTO_INCREMENT,
-            itemName varchar(40),
-            price int,
-            quantity int,
-            PRIMARY KEY (id)
-        );";
-        $resultLoop = $connection->query($sqlCreateTable);
+        $genTable = true;
 
         switch ($type) {
             case "metals":
@@ -80,15 +74,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 break;
             default:
                 $goods = array();
+                $genTable = false;
                 break;
         }
 
-        foreach ($goods as $name => $data) {
-            //adding all the goods into the table that was created. 
-            $price = $data["price"];
-            $quantity = $data["quantity"];
-            $sqlCreateTable = "INSERT INTO $type (`itemName`, `price`, `quantity`) VALUES('$name',$price,$quantity);";
+        if ($genTable) {
+
+            $sqlCreateTable = "CREATE TABLE $type (
+                id int NOT NULL AUTO_INCREMENT,
+                itemName varchar(40),
+                price int,
+                quantity int,
+                PRIMARY KEY (id)
+            );";
+
             $resultLoop = $connection->query($sqlCreateTable);
+
+
+            foreach ($goods as $name => $data) {
+                //adding all the goods into the table that was created. 
+                $price = $data["price"];
+                $quantity = $data["quantity"];
+                $sqlCreateTable = "INSERT INTO $type (`itemName`, `price`, `quantity`) VALUES('$name',$price,$quantity);";
+                $resultLoop = $connection->query($sqlCreateTable);
+            }
         }
     }
 
@@ -130,7 +139,7 @@ function generateSmuggled()
         $randNumber = rand(1, 8);
         $rarity = "";
         $randRarity = rand(1, 6);
-        
+
         // it's on the magic item table 
         if ($randNumber == 8) {
             if ($randRarity == 6) {
@@ -327,7 +336,7 @@ function generateSmuggled()
                 break;
         }
     }
-    
+
     return $goods;
 }
 

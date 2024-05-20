@@ -37,6 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 $quantity = $good["quantity"];
                 $goods[] = array("name" => $goodName, "price" => $price, "quantity" => $quantity);
             }
+        } else {
+            $goods = array();
         }
 
         $tier2 = $row["isTier2"] == 1 ? $row["tier2Ability"] : "";
