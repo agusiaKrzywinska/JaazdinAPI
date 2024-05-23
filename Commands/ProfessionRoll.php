@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     //add tier bonus if any
     if ($tier > 3) {
-        $roll += ($tier - 3) * 10;
+        $roll += (min($tier, 7) - 3) * 10;
     }
 	
     $boatsAffected = ''; 
@@ -59,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $message = "";
     foreach ($bonuses as $bonus) {
         //check for proper rarity && creature type
-
         if ($roll >= $bonus['roll']['min'] && $roll <= $bonus['roll']['max']) {
             $message = $bonus['bonus'];
             break;

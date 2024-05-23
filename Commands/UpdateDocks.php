@@ -109,8 +109,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $connection->query($sqlGetBoatsThatLeftTown);
     while ($row = $result->fetch_assoc()) {
         $type = $row["tableToGenerate"];
-        $sqlDropTable = "DROP TABLE if EXISTS $type;";
-        $resultLoop = $connection->query($sqlDropTable);
+        if ($type != "NA") {
+            $sqlDropTable = "DROP TABLE if EXISTS $type;";
+            $resultLoop = $connection->query($sqlDropTable);
+        }
     }
 
     //calling show boats and returning their message as ours. 
