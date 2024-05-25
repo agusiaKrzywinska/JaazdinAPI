@@ -177,6 +177,22 @@
             }
         },
         {
+            "name": "Sky Steel",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 410
+            }
+        },
+        {
+            "name": "Wyrm Platinum",
+            "rarity": "Rare",
+            "price": {
+                "min": 450,
+                "max": 600
+            }
+        },
+        {
             "name": "Gor`Shorot",
             "rarity": "Rare",
             "price": {
@@ -201,11 +217,35 @@
             }
         },
         {
+            "name": "Ghost Steel",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            }
+        },
+        {
             "name": "Prismatic Ice",
             "rarity": "Rare",
             "price": {
                 "min": 270,
                 "max": 310
+            }
+        },
+        {
+            "name": "Cubic Granite",
+            "rarity": "Rare",
+            "price": {
+                "min": 300,
+                "max": 340
+            }
+        },
+        {
+            "name": "Illithidium",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 360
             }
         },
         {
@@ -378,6 +418,14 @@
         },
         {
             "name": "Tytantium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 450,
+                "max": 475
+            }
+        },
+        {
+            "name": "Mentallite",
             "rarity": "Very Rare",
             "price": {
                 "min": 450,

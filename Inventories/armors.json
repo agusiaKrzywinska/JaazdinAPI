@@ -3,53 +3,100 @@
         {
             "name": "Studded Leather",
             "plates": 2,
-            "price": 45
+            "price": 45,
+            "invalidMetals": [
+                "Ash Quartz",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Chain shirt",
             "plates": 3,
-            "price": 50
+            "price": 50,
+            "invalidMetals": [
+                "Ash Quartz",
+                "Chromed Silk",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Scale Mail",
             "plates": 3,
-            "price": 50
+            "price": 50,
+            "invalidMetals": [
+                "Ash Quartz",
+                "Chromed Silk",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Breastplate",
             "plates": 4,
-            "price": 400
+            "price": 400,
+            "invalidMetals": [
+                "Ash Quartz",
+                "Chromed Silk",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Half Plate",
             "plates": 4,
-            "price": 750
+            "price": 750,
+            "invalidMetals": [
+                "Ash Quartz",
+                "Chromed Silk",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Ring mail",
             "plates": 5,
-            "price": 30
+            "price": 30,
+            "invalidMetals": [
+                "Chromed Silk",
+                "Alacriver",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Chain mail",
             "plates": 5,
-            "price": 75
+            "price": 75,
+            "invalidMetals": [
+                "Chromed Silk",
+                "Alacriver",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Splint",
             "plates": 6,
-            "price": 200
+            "price": 200,
+            "invalidMetals": [
+                "Chromed Silk",
+                "Alacriver",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Plate",
             "plates": 8,
-            "price": 1500
+            "price": 1500,
+            "invalidMetals": [
+                "Chromed Silk",
+                "Alacriver",
+                "Cubic Granite"
+            ]
         },
         {
             "name": "Shield",
             "plates": 2,
-            "price": 10
+            "price": 10,
+            "invalidMetals": [
+                "Ash Quartz",
+                "Chromed Silk"
+            ]
         }
-
     ]
 }

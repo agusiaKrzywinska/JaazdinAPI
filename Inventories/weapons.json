@@ -4,169 +4,169 @@
             "name": "Club",
             "plates": 1,
             "price": 0.1,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Dagger",
             "plates": 1,
             "price": 2,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Greatclub",
             "plates": 3,
             "price": 0.2,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Handaxe",
             "plates": 1,
             "price": 5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Javelin",
             "plates": 2,
             "price": 0.5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Light Hammer",
             "plates": 1,
             "price": 2,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Mace",
             "plates": 2,
             "price": 5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Quarterstaff",
             "plates": 3,
             "price": 0.2,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Sickle",
             "plates": 1,
             "price": 1,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Spear",
             "plates": 2,
             "price": 1,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Battleaxe",
             "plates": 3,
             "price": 10,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Flail",
             "plates": 1,
             "price": 10,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Glaive",
             "plates": 4,
             "price": 20,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Greataxe",
             "plates": 4,
             "price": 300,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Greatsword",
             "plates": 4,
             "price": 50,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Halberd",
             "plates": 4,
             "price": 20,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Lance",
             "plates": 4,
             "price": 10,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Longsword",
             "plates": 3,
             "price": 15,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Maul",
             "plates": 4,
             "price": 10,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Morningstar",
             "plates": 2,
             "price": 15,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Pike",
             "plates": 4,
             "price": 5,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Rapier",
             "plates": 2,
             "price": 25,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Scimitar",
             "plates": 1,
             "price": 25,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Shortsword",
             "plates": 1,
             "price": 10,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Trident",
             "plates": 3,
             "price": 5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "War Pick",
             "plates": 2,
             "price": 5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Warhammer",
             "plates": 3,
             "price": 15,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Whip",
             "plates": 2,
             "price": 2,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Crossbow Bolts (10)",
@@ -202,91 +202,91 @@
             "name": "Naginata",
             "plates": 3,
             "price": 80,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Shuang Gou",
             "plates": 1,
             "price": 10,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Meteor Hammer",
             "plates": 4,
             "price": 100,
-            "invalidMetals": []
+            "invalidMetals": ["Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Tonfa",
             "plates": 1,
             "price": 5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Urumi",
             "plates": 3,
             "price": 120,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Chakram",
             "plates": 1,
             "price": 3,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite"]
         },
         {
             "name": "Cestus",
             "plates": 1,
             "price": 0.2,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Iron Cestus",
             "plates": 3,
             "price": 15,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Bassinet Claws",
             "plates": 4,
             "price": 25,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Shell Blades",
             "plates": 2,
             "price": 30,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Bardiche",
             "plates": 3,
             "price": 25,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Slingsword",
             "plates": 3,
             "price": 250,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Bola",
             "plates": 1,
             "price": 0.03,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Bladed Net",
             "plates": 3,
             "price": 0.1,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         },
         {
             "name": "Man Catcher",
             "plates": 3,
             "price": 5,
-            "invalidMetals": ["Ash Quartz"]
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         }
     ]
 }
