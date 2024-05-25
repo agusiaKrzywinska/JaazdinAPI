@@ -8,12 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
     $metalRarity = str_replace(' ', '%20', $metalRarity);
 
-    $json_url = "../Inventories/weapons.json";
-
-    // pick a random weapon
-    $weapons = json_decode(file_get_contents($json_url), true);
-    $weaponChosen = $weapons["weapons"][rand(0, count($weapons["weapons"]) - 1)];
-
     // pick a random metal based on the rarity. 
     $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateMetal.php?rarity=$metalRarity";
     $options = [
@@ -22,9 +16,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             'method' => 'GET'
         ],
     ];
+
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
-    $weaponChosen['metal'] = json_decode($result);
+
+    $metalChosen = json_decode($result);
+
+
+    $json_url = "../Inventories/weapons.json";
+    $weapons = json_decode(file_get_contents($json_url), true);
+    // pick a random weapon
+    while (true) {
+
+        $weaponChosen = $weapons["weapons"][rand(0, count($weapons["weapons"]) - 1)];
+
+        if (in_array($metalChosen->name, $weaponChosen["invalidMetals"])) {
+            continue;
+        }
+
+        $weaponChosen['metal'] = $metalChosen;
+        break;
+    }
 
     echo json_encode($weaponChosen);
 }

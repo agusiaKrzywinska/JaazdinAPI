@@ -3,242 +3,290 @@
         {
             "name": "Club",
             "plates": 1,
-            "price": 0.1
+            "price": 0.1,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Dagger",
             "plates": 1,
-            "price": 2
+            "price": 2,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Greatclub",
             "plates": 3,
-            "price": 0.2
+            "price": 0.2,
+            "invalidMetals": []
         },
         {
             "name": "Handaxe",
             "plates": 1,
-            "price": 5
+            "price": 5,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Javelin",
             "plates": 2,
-            "price": 0.5
+            "price": 0.5,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Light Hammer",
             "plates": 1,
-            "price": 2
+            "price": 2,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Mace",
             "plates": 2,
-            "price": 5
+            "price": 5,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Quarterstaff",
             "plates": 3,
-            "price": 0.2
+            "price": 0.2,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Sickle",
             "plates": 1,
-            "price": 1
+            "price": 1,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Spear",
             "plates": 2,
-            "price": 1
+            "price": 1,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Battleaxe",
             "plates": 3,
-            "price": 10
+            "price": 10,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Flail",
             "plates": 1,
-            "price": 10
+            "price": 10,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Glaive",
             "plates": 4,
-            "price": 20
+            "price": 20,
+            "invalidMetals": []
         },
         {
             "name": "Greataxe",
             "plates": 4,
-            "price": 300
+            "price": 300,
+            "invalidMetals": []
         },
         {
             "name": "Greatsword",
             "plates": 4,
-            "price": 50
+            "price": 50,
+            "invalidMetals": []
         },
         {
             "name": "Halberd",
             "plates": 4,
-            "price": 20
+            "price": 20,
+            "invalidMetals": []
         },
         {
             "name": "Lance",
             "plates": 4,
-            "price": 10
+            "price": 10,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Longsword",
             "plates": 3,
-            "price": 15
+            "price": 15,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Maul",
             "plates": 4,
-            "price": 10
+            "price": 10,
+            "invalidMetals": []
         },
         {
             "name": "Morningstar",
             "plates": 2,
-            "price": 15
+            "price": 15,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Pike",
             "plates": 4,
-            "price": 5
+            "price": 5,
+            "invalidMetals": []
         },
         {
             "name": "Rapier",
             "plates": 2,
-            "price": 25
+            "price": 25,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Scimitar",
             "plates": 1,
-            "price": 25
+            "price": 25,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Shortsword",
             "plates": 1,
-            "price": 10
+            "price": 10,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Trident",
             "plates": 3,
-            "price": 5
+            "price": 5,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "War Pick",
             "plates": 2,
-            "price": 5
+            "price": 5,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Warhammer",
             "plates": 3,
-            "price": 15
+            "price": 15,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Whip",
             "plates": 2,
-            "price": 2
+            "price": 2,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Crossbow Bolts (10)",
             "plates": 1,
-            "price": 1
+            "price": 1,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Arrows (10)",
             "plates": 1,
-            "price": 1
+            "price": 1,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Sling Ammo (10)",
             "plates": 1,
-            "price": 0
+            "price": 0,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Darts (15)",
             "plates": 1,
-            "price": 15
+            "price": 15,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Ballista Bolt (3)",
             "plates": 1,
-            "price": 50
+            "price": 50,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Naginata",
             "plates": 3,
-            "price": 80
+            "price": 80,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Shuang Gou",
             "plates": 1,
-            "price": 10
+            "price": 10,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Meteor Hammer",
             "plates": 4,
-            "price": 100
+            "price": 100,
+            "invalidMetals": []
         },
         {
             "name": "Tonfa",
             "plates": 1,
-            "price": 5
+            "price": 5,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Urumi",
             "plates": 3,
-            "price": 120
+            "price": 120,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Chakram",
             "plates": 1,
-            "price": 3
+            "price": 3,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Cestus",
             "plates": 1,
-            "price": 0.2
+            "price": 0.2,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Iron Cestus",
             "plates": 3,
-            "price": 15
+            "price": 15,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Bassinet Claws",
             "plates": 4,
-            "price": 25
+            "price": 25,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Shell Blades",
             "plates": 2,
-            "price": 30
+            "price": 30,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Bardiche",
             "plates": 3,
-            "price": 25
+            "price": 25,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Slingsword",
             "plates": 3,
-            "price": 250
+            "price": 250,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Bola",
             "plates": 1,
-            "price": 0.03
+            "price": 0.03,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Bladed Net",
             "plates": 3,
-            "price": 0.1
+            "price": 0.1,
+            "invalidMetals": ["Ash Quartz"]
         },
         {
             "name": "Man Catcher",
             "plates": 3,
-            "price": 5
+            "price": 5,
+            "invalidMetals": ["Ash Quartz"]
         }
     ]
 }
