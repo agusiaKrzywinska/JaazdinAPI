@@ -72,6 +72,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             case "smuggle":
                 $goods = generateSmuggled();
                 break;
+            case "otherworld":
+                $goods = generateOtherworldlyItems();
+                break;
             default:
                 $goods = array();
                 $genTable = false;
@@ -866,6 +869,107 @@ function generateReagents()
 {
     $goods = [];
     $totalReagents = 4;
+    $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+
+    for ($i = 0; $i < $totalReagents; $i++) {
+        $randNumber = rand(1, 20);
+        if ($randNumber == 20) {
+            $typesToSpawn['Legendary']++;
+        } elseif ($randNumber >= 16) {
+            $typesToSpawn["Very Rare"]++;
+        } elseif ($randNumber >= 13) {
+            $typesToSpawn["Rare"]++;
+        } elseif ($randNumber >= 3) {
+            $typesToSpawn["Uncommon"]++;
+        } else {
+            $typesToSpawn["Common"]++;
+        }
+    }
+
+    //generating all the beast types. 
+    $currentPetId = 0;
+    $petTypes = [];
+    for ($i = 0; $i < $totalReagents; $i++) {
+        $randNumber = rand(1, 12);
+        $petTypes[] = getMonsterType($randNumber);
+
+    }
+
+    //generate all reagents
+    $currentPetId = 0;
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $finalCreatureType = $petTypes[$currentPetId];
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateReagent.php?rarity=$finalRarity&creatureType=$finalCreatureType";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempReagent = json_decode($contents);
+
+            //convert weapons to shipment items
+            $tempGood = array('name' => $tempReagent->name, 'quantity' => 1, 'price' => rand($tempReagent->price->min, $tempReagent->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+            $currentPetId++;
+        }
+    }
+    return $goods;
+}
+
+function generateOtherworldlyItems()
+{
+    $goods = [];
+
+    //generating metals
+    //calculating the metals to generate. 
+    $startingUncommon = 3;
+    $typesToSpawn = array("Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
+    for ($i = 0; $i < $startingUncommon; $i++) {
+        $randNumber = rand(1, 6);
+        if ($randNumber == 5) {
+            $typesToSpawn["Rare"]++;
+        } else if ($randNumber == 6) {
+            $typesToSpawn["Very Rare"]++;
+        } else {
+            $typesToSpawn["Uncommon"]++;
+        }
+    }
+
+    //generate all metals
+    foreach ($typesToSpawn as $rarity => $amount) {
+        for ($i = 0; $i < $amount; $i++) {
+            $finalRarity = str_replace(' ', '%20', $rarity);
+            $url = "http://jaazdinapi.mygamesonline.org/Commands/GenerateNonMaterialMetal.php?rarity=$finalRarity";
+            $options = [
+                'http' => [
+                    'header' => "Content-type: application/json",
+                    'method' => 'GET'
+                ],
+            ];
+            $context = stream_context_create($options);
+            $contents = file_get_contents($url, false, $context);
+            $tempMetal = json_decode($contents);
+            //convert metals to shipment items
+            $tempGood = array('name' => $tempMetal->name, 'quantity' => 1, 'price' => rand($tempMetal->price->min, $tempMetal->price->max));
+            if (array_key_exists($tempGood['name'], $goods)) {
+                $goods[$tempGood['name']]['quantity']++;
+            } else {
+                $goods[$tempGood['name']] = $tempGood;
+            }
+        }
+    }
+
+    //generating reagents
+    $totalReagents = 2;
     $typesToSpawn = array("Common" => 0, "Uncommon" => 0, "Rare" => 0, "Very Rare" => 0, "Legendary" => 0);
 
     for ($i = 0; $i < $totalReagents; $i++) {

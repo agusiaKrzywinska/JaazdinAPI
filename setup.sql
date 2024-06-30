@@ -45,6 +45,10 @@ VALUES("The Indomiatable II","Mycerion","Ocean's Valley",4,1,"Arcanist Teaching"
 INSERT INTO `boats` (`boatName`, `city`, `country`, `waitTime`, `timeInTown`, `jobsAffected`, `tier2Ability`, `tableToGenerate`, `isTier2`, `weeksLeft`, `isInTown`, `isRunning`) 
 VALUES("South Quezzillian Trade Fleet","N/A","Quezzillian",12,2,"","","",false,14,false,true);
 
+-- Astral Sea Boat
+INSERT INTO `boats` (`boatName`, `city`, `country`, `waitTime`, `timeInTown`, `jobsAffected`, `tier2Ability`, `tableToGenerate`, `isTier2`, `weeksLeft`, `isInTown`, `isRunning`) 
+VALUES("Tl’a’ikith","Allport","Astral Sea",7,1,"Docks Theft Artist","While in town, characters can spend 50gp to hire a tutor for the week, allowing them to gain double progress on learning one tool or language, you still have to use your downtime to train and spend the 25gp needed to do so. In addition, character rolling for Complications in downtime can roll twice and select which result they want to use.","otherworldItems",false,7,false,false);
+
 -- Create Shipment Table
 CREATE TABLE shipment (
     id int NOT NULL AUTO_INCREMENT,
