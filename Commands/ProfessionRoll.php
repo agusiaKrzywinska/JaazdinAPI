@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
     //return bonus message. 
-    echo json_encode(array('message' => "(base $startingRoll, @tier $tier$boatsAffected, final Result: $roll) $message"));
+    echo json_encode(array('message' => "$job (base $startingRoll, @tier $tier$boatsAffected, final Result: $roll) $message"));
 }
 
 $connection->close();
