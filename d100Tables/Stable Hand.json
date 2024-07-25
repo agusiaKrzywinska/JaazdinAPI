@@ -1,0 +1,79 @@
+[
+    {
+        "bonus": "GP Die +1 & 10gp.",
+        "roll": {
+            "min": 1,
+            "max": 20
+        }
+    },
+    {
+        "bonus": "You gain advantage on your next taming check.",
+        "roll": {
+            "min": 21,
+            "max": 40
+        }
+    },
+    {
+        "bonus": "You are offered a CR 1/4-CR1 creature, roll 1d20 to determine type.",
+        "roll": {
+            "min": 41,
+            "max": 55
+        }
+    },
+    {
+        "bonus": "Increase your Wage progression by +1.",
+        "roll": {
+            "min": 56,
+            "max": 70
+        }
+    },
+    {
+        "bonus": "Decrease the next taming or training DC you make by 2.",
+        "roll": {
+            "min": 71,
+            "max": 85
+        }
+    },
+    {
+        "bonus": "You are offered a CR 2-5 creature, roll 1d20 to determine type.",
+        "roll": {
+            "min": 86,
+            "max": 95
+        }
+    },
+    {
+        "bonus": "Decrease the next taming or training DC you make by 4.",
+        "roll": {
+            "min": 96,
+            "max": 105
+        }
+    },
+    {
+        "bonus": "GGP Die +3 and +30gp.",
+        "roll": {
+            "min": 106,
+            "max": 115
+        }
+    },
+    {
+        "bonus": "You are offered a CR 6-8 creature, roll 1d20 to determine type.",
+        "roll": {
+            "min": 116,
+            "max": 125
+        }
+    },
+    {
+        "bonus": "Increase your Wage progression by +2.",
+        "roll": {
+            "min": 126,
+            "max": 135
+        }
+    },
+    {
+        "bonus": "Decrase the taming or training DC of one animal permanently by 1.",
+        "roll": {
+            "min": 135,
+            "max": 300
+        }
+    }
+]
