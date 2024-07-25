@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Create a medical pounch.",
+        "bonus": "Create a medical pouch.",
         "roll": {
             "min": 116,
             "max": 125

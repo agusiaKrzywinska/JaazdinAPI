@@ -6,7 +6,8 @@
             "price": {
                 "min": 1,
                 "max": 1
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Silver",
@@ -14,7 +15,8 @@
             "price": {
                 "min": 5,
                 "max": 5
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Githyanki Silver",
@@ -22,7 +24,8 @@
             "price": {
                 "min": 230,
                 "max": 270
-            }
+            },
+            "plane": "Astral Sea"
         },
         {
             "name": "Mithral",
@@ -30,7 +33,8 @@
             "price": {
                 "min": 180,
                 "max": 220
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Black Iron",
@@ -38,7 +42,8 @@
             "price": {
                 "min": 180,
                 "max": 220
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Ironoak",
@@ -46,7 +51,8 @@
             "price": {
                 "min": 140,
                 "max": 180
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Razorwood",
@@ -54,7 +60,8 @@
             "price": {
                 "min": 225,
                 "max": 260
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Dragon`s Gold",
@@ -62,7 +69,8 @@
             "price": {
                 "min": 190,
                 "max": 225
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Gorgonite",
@@ -70,7 +78,8 @@
             "price": {
                 "min": 175,
                 "max": 225
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Tinker`s Brass",
@@ -78,7 +87,8 @@
             "price": {
                 "min": 165,
                 "max": 195
-            }
+            },
+            "plane": "Mechanius"
         },
         {
             "name": "Chromed Silk",
@@ -86,7 +96,8 @@
             "price": {
                 "min": 180,
                 "max": 210
-            }
+            },
+            "plane": "Underdark"
         },
         {
             "name": "Void Ash",
@@ -94,7 +105,8 @@
             "price": {
                 "min": 190,
                 "max": 210
-            }
+            },
+            "plane": "Far Realms"
         },
         {
             "name": "Ash Quartz",
@@ -102,7 +114,8 @@
             "price": {
                 "min": 220,
                 "max": 240
-            }
+            },
+            "plane": "Fire"
         },
         {
             "name": "Demonic Wrought Iron",
@@ -110,7 +123,8 @@
             "price": {
                 "min": 190,
                 "max": 210
-            }
+            },
+            "plane": "Abyss"
         },
         {
             "name": "Bloodsteel",
@@ -118,7 +132,8 @@
             "price": {
                 "min": 190,
                 "max": 220
-            }
+            },
+            "plane": "9 Hells (Avernus)"
         },
         {
             "name": "Red Iron",
@@ -126,7 +141,8 @@
             "price": {
                 "min": 175,
                 "max": 215
-            }
+            },
+            "plane": "9 Hells (Dis)"
         },
         {
             "name": "Dawn Steel",
@@ -134,7 +150,8 @@
             "price": {
                 "min": 165,
                 "max": 195
-            }
+            },
+            "plane": "Elysium"
         },
         {
             "name": "Arcanite",
@@ -142,15 +159,8 @@
             "price": {
                 "min": 350,
                 "max": 410
-            }
-        },
-        {
-            "name": "Wyrm Platinum",
-            "rarity": "Rare",
-            "price": {
-                "min": 350,
-                "max": 410
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Adamantine",
@@ -158,7 +168,8 @@
             "price": {
                 "min": 280,
                 "max": 320
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Mizzium",
@@ -166,7 +177,8 @@
             "price": {
                 "min": 375,
                 "max": 425
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Skaier",
@@ -174,7 +186,8 @@
             "price": {
                 "min": 270,
                 "max": 310
-            }
+            },
+            "plane": "Air"
         },
         {
             "name": "Sky Steel",
@@ -182,7 +195,8 @@
             "price": {
                 "min": 350,
                 "max": 410
-            }
+            },
+            "plane": "Air"
         },
         {
             "name": "Wyrm Platinum",
@@ -190,7 +204,8 @@
             "price": {
                 "min": 450,
                 "max": 600
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Gor`Shorot",
@@ -198,7 +213,8 @@
             "price": {
                 "min": 290,
                 "max": 330
-            }
+            },
+            "plane": "Earth"
         },
         {
             "name": "Radiant Garnet",
@@ -206,7 +222,8 @@
             "price": {
                 "min": 350,
                 "max": 390
-            }
+            },
+            "plane": "Earth"
         },
         {
             "name": "Blazing Brass",
@@ -214,7 +231,8 @@
             "price": {
                 "min": 270,
                 "max": 310
-            }
+            },
+            "plane": "Fire"
         },
         {
             "name": "Ghost Steel",
@@ -222,7 +240,8 @@
             "price": {
                 "min": 270,
                 "max": 310
-            }
+            },
+            "plane": "Ethereal Plane"
         },
         {
             "name": "Prismatic Ice",
@@ -230,7 +249,8 @@
             "price": {
                 "min": 270,
                 "max": 310
-            }
+            },
+            "plane": "Water"
         },
         {
             "name": "Cubic Granite",
@@ -238,7 +258,8 @@
             "price": {
                 "min": 300,
                 "max": 340
-            }
+            },
+            "plane": "Acheron"
         },
         {
             "name": "Illithidium",
@@ -246,7 +267,8 @@
             "price": {
                 "min": 350,
                 "max": 360
-            }
+            },
+            "plane": "Far Realms"
         },
         {
             "name": "Pixiesteel",
@@ -254,7 +276,8 @@
             "price": {
                 "min": 280,
                 "max": 320
-            }
+            },
+            "plane": "Feywilds"
         },
         {
             "name": "Ashenite",
@@ -262,7 +285,8 @@
             "price": {
                 "min": 290,
                 "max": 330
-            }
+            },
+            "plane": "Shadowfell"
         },
         {
             "name": "Gravinite",
@@ -270,7 +294,8 @@
             "price": {
                 "min": 270,
                 "max": 310
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Putrid Lead",
@@ -278,7 +303,8 @@
             "price": {
                 "min": 300,
                 "max": 340
-            }
+            },
+            "plane": "9 Hells (Minauros)"
         },
         {
             "name": "Living Lava",
@@ -286,7 +312,8 @@
             "price": {
                 "min": 290,
                 "max": 330
-            }
+            },
+            "plane": "9 Hells (Phlethegos)"
         },
         {
             "name": "Sanctified Ivory",
@@ -294,7 +321,8 @@
             "price": {
                 "min": 275,
                 "max": 315
-            }
+            },
+            "plane": "The Beastlands"
         },
         {
             "name": "Cosmic Ebony",
@@ -302,7 +330,8 @@
             "price": {
                 "min": 350,
                 "max": 390
-            }
+            },
+            "plane": "Far Realms"
         },
         {
             "name": "Vilified Ivory",
@@ -310,7 +339,8 @@
             "price": {
                 "min": 500,
                 "max": 550
-            }
+            },
+            "plane": "The Beastlands"
         },
         {
             "name": "Devil`s Mercury",
@@ -318,7 +348,8 @@
             "price": {
                 "min": 425,
                 "max": 475
-            }
+            },
+            "plane": "9 Hells (Stygia)"
         },
         {
             "name": "Cold Titian",
@@ -326,7 +357,8 @@
             "price": {
                 "min": 440,
                 "max": 480
-            }
+            },
+            "plane": "Arcadia"
         },
         {
             "name": "Cosmium",
@@ -334,7 +366,8 @@
             "price": {
                 "min": 480,
                 "max": 510
-            }
+            },
+            "plane": "Astral Sea"
         },
         {
             "name": "Alacriver",
@@ -342,7 +375,8 @@
             "price": {
                 "min": 475,
                 "max": 500
-            }
+            },
+            "plane": "Arborea"
         },
         {
             "name": "Zuigni",
@@ -350,7 +384,8 @@
             "price": {
                 "min": 430,
                 "max": 470
-            }
+            },
+            "plane": "Fire"
         },
         {
             "name": "Cobalt",
@@ -358,7 +393,8 @@
             "price": {
                 "min": 450,
                 "max": 475
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Prismium",
@@ -366,7 +402,8 @@
             "price": {
                 "min": 525,
                 "max": 550
-            }
+            },
+            "plane": "Material"
         },
         {
             "name": "Terrataium",
@@ -374,7 +411,8 @@
             "price": {
                 "min": 425,
                 "max": 475
-            }
+            },
+            "plane": "Earth"
         },
         {
             "name": "Malcanthym",
@@ -382,7 +420,8 @@
             "price": {
                 "min": 435,
                 "max": 485
-            }
+            },
+            "plane": "Elemental Chaos"
         },
         {
             "name": "Dirythym",
@@ -390,7 +429,8 @@
             "price": {
                 "min": 500,
                 "max": 525
-            }
+            },
+            "plane": "Elemental Chaos"
         },
         {
             "name": "Keystone",
@@ -398,7 +438,8 @@
             "price": {
                 "min": 440,
                 "max": 460
-            }
+            },
+            "plane": "Sigil"
         },
         {
             "name": "Warden`s Copper",
@@ -406,7 +447,8 @@
             "price": {
                 "min": 460,
                 "max": 490
-            }
+            },
+            "plane": "9 Hells (Malbolge)"
         },
         {
             "name": "Dark Platinum",
@@ -414,7 +456,8 @@
             "price": {
                 "min": 465,
                 "max": 495
-            }
+            },
+            "plane": "9 Hells (Maladomini)"
         },
         {
             "name": "Tytantium",
@@ -422,7 +465,8 @@
             "price": {
                 "min": 450,
                 "max": 475
-            }
+            },
+            "plane": "9 Hells (Cania)"
         },
         {
             "name": "Mentallite",
@@ -430,7 +474,8 @@
             "price": {
                 "min": 450,
                 "max": 475
-            }
+            },
+            "plane": "Far Realms"
         },
         {
             "name": "Eternium",
@@ -438,7 +483,8 @@
             "price": {
                 "min": 1000,
                 "max": 1200
-            }
+            },
+            "plane": "Astral Sea"
         },
         {
             "name": "Clockwork Bronze",
@@ -446,7 +492,8 @@
             "price": {
                 "min": 750,
                 "max": 825
-            }
+            },
+            "plane": "Mechanus"
         },
         {
             "name": "Celestial Gold",
@@ -454,7 +501,8 @@
             "price": {
                 "min": 800,
                 "max": 900
-            }
+            },
+            "plane": "Mount Celestia"
         },
         {
             "name": "Soulsteel",
@@ -462,7 +510,8 @@
             "price": {
                 "min": 750,
                 "max": 825
-            }
+            },
+            "plane": "Shadowfell"
         },
         {
             "name": "Asmodeum",
@@ -470,7 +519,8 @@
             "price": {
                 "min": 850,
                 "max": 1000
-            }
+            },
+            "plane": "9 Hells (Nessus)"
         },
         {
             "name": "Truemetal",
@@ -478,7 +528,8 @@
             "price": {
                 "min": 825,
                 "max": 875
-            }
+            },
+            "plane": "Positive Energy Plane"
         },
         {
             "name": "Mockrium",
@@ -486,7 +537,8 @@
             "price": {
                 "min": 800,
                 "max": 900
-            }
+            },
+            "plane": "Limbo"
         }
     ]
 }
