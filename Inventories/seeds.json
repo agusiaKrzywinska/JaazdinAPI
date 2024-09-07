@@ -1,19 +1,19 @@
 {
     "seeds": [
         {
-            "name": "Remedial Herbs",
+            "name": "Jadded Craigroot",
             "rarity": "Common",
             "price": {
-                "min": 20,
+                "min": 25,
                 "max": 30
             }
         },
         {
-            "name": "Wireweed",
+            "name": "Mist Creeper",
             "rarity": "Common",
             "price": {
-                "min": 25,
-                "max": 35
+                "min": 20,
+                "max": 30
             }
         },
         {
@@ -25,15 +25,7 @@
             }
         },
         {
-            "name": "Trailvine",
-            "rarity": "Common",
-            "price": {
-                "min": 15,
-                "max": 25
-            }
-        },
-        {
-            "name": "Mist Creeper",
+            "name": "Remedial Herbs",
             "rarity": "Common",
             "price": {
                 "min": 20,
@@ -49,14 +41,6 @@
             }
         },
         {
-            "name": "Jadded Craigroot",
-            "rarity": "Common",
-            "price": {
-                "min": 25,
-                "max": 30
-            }
-        },
-        {
             "name": "St. Clem`s Candle",
             "rarity": "Common",
             "price": {
@@ -65,7 +49,31 @@
             }
         },
         {
-            "name": "Hiker`s Bounty",
+            "name": "Trailvine",
+            "rarity": "Common",
+            "price": {
+                "min": 15,
+                "max": 25
+            }
+        },
+        {
+            "name": "Wireweed",
+            "rarity": "Common",
+            "price": {
+                "min": 25,
+                "max": 35
+            }
+        },
+        {
+            "name": "Blistercoil",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 100,
+                "max": 110
+            }
+        },
+        {
+            "name": "Bubblepod",
             "rarity": "Uncommon",
             "price": {
                 "min": 65,
@@ -73,7 +81,31 @@
             }
         },
         {
+            "name": "Devil`s Cactus",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 80,
+                "max": 90
+            }
+        },
+        {
+            "name": "Drow`s Wine Glass",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 70,
+                "max": 80
+            }
+        },
+        {
             "name": "Foggy Leaf",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 65,
+                "max": 80
+            }
+        },
+        {
+            "name": "Hiker`s Bounty",
             "rarity": "Uncommon",
             "price": {
                 "min": 65,
@@ -89,19 +121,11 @@
             }
         },
         {
-            "name": "Bubblepod",
+            "name": "Rusty Sprigg",
             "rarity": "Uncommon",
             "price": {
-                "min": 65,
-                "max": 80
-            }
-        },
-        {
-            "name": "Drow`s Wine Glass",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 70,
-                "max": 80
+                "min": 80,
+                "max": 90
             }
         },
         {
@@ -113,31 +137,7 @@
             }
         },
         {
-            "name": "Devil`s Cactus",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 80,
-                "max": 90
-            }
-        },
-        {
-            "name": "Rusty Sprigg",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 80,
-                "max": 90
-            }
-        },
-        {
-            "name": "Blistercoil",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 100,
-                "max": 110
-            }
-        },
-        {
-            "name": "Aquatice Companion",
+            "name": "Aquatic Companion",
             "rarity": "Rare",
             "price": {
                 "min": 125,
@@ -145,11 +145,11 @@
             }
         },
         {
-            "name": "Ocean`s Lily",
+            "name": "Deathrose",
             "rarity": "Rare",
             "price": {
-                "min": 140,
-                "max": 180
+                "min": 160,
+                "max": 225
             }
         },
         {
@@ -161,19 +161,11 @@
             }
         },
         {
-            "name": "Shaishen Herb",
+            "name": "False Clover",
             "rarity": "Rare",
             "price": {
                 "min": 150,
                 "max": 200
-            }
-        },
-        {
-            "name": "Deathrose",
-            "rarity": "Rare",
-            "price": {
-                "min": 160,
-                "max": 225
             }
         },
         {
@@ -193,7 +185,15 @@
             }
         },
         {
-            "name": "False Clover",
+            "name": "Ocean`s Lily",
+            "rarity": "Rare",
+            "price": {
+                "min": 140,
+                "max": 180
+            }
+        },
+        {
+            "name": "Shaishen Herb",
             "rarity": "Rare",
             "price": {
                 "min": 150,
@@ -201,15 +201,23 @@
             }
         },
         {
-            "name": "Flaming Lily",
-            "rarity": "Very Rare",
+            "name": "Rock Gum Root",
+            "rarity": "Rare",
             "price": {
-                "min": 225,
-                "max": 275
+                "min": 140,
+                "max": 190
             }
         },
         {
-            "name": "Tornado Tulips",
+            "name": "Ferrbiscus",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 250,
+                "max": 300
+            }
+        },
+        {
+            "name": "Flaming Lily",
             "rarity": "Very Rare",
             "price": {
                 "min": 225,
@@ -233,19 +241,19 @@
             }
         },
         {
-            "name": "Ferrbiscus",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 250,
-                "max": 300
-            }
-        },
-        {
             "name": "Solar Harpflower",
             "rarity": "Very Rare",
             "price": {
                 "min": 260,
                 "max": 310
+            }
+        },
+        {
+            "name": "Tornado Tulips",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 225,
+                "max": 275
             }
         },
         {
@@ -281,7 +289,39 @@
             }
         },
         {
-            "name": "Dragon`s Rose",
+            "name": "Dragon`s Rose (Red)",
+            "rarity": "Legendary",
+            "price": {
+                "min": 400,
+                "max": 500
+            }
+        },
+        {
+            "name": "Dragon`s Rose (White)",
+            "rarity": "Legendary",
+            "price": {
+                "min": 400,
+                "max": 500
+            }
+        },
+        {
+            "name": "Dragon`s Rose (Blue)",
+            "rarity": "Legendary",
+            "price": {
+                "min": 400,
+                "max": 500
+            }
+        },
+        {
+            "name": "Dragon`s Rose (Green)",
+            "rarity": "Legendary",
+            "price": {
+                "min": 400,
+                "max": 500
+            }
+        },
+        {
+            "name": "Dragon`s Rose (Black)",
             "rarity": "Legendary",
             "price": {
                 "min": 400,
