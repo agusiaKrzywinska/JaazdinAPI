@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "Roll 1d6 + half your cleric/paladin levels, subtract the number rolled from another religion (or multiple totaling your number rolled) and add it to yours.",
+        "bonus": "Roll 1d6 + half your cleric/paladin levels, subtract the number rolled from another religion's followers (or multiple totaling your number rolled) and add it to yours.",
         "roll": {
             "min": 21,
             "max": 40
@@ -28,7 +28,7 @@
         }
     },
     {
-        "bonus": "Roll 1d10 + half your cleric/paladin levels, subtract the number rolled from another religion (or multiple totaling your number rolled) and add it to yours.",
+        "bonus": "Roll 1d10 + half your cleric/paladin levels, subtract the number rolled from another religion's followers (or multiple totaling your number rolled) and add it to yours.",
         "roll": {
             "min": 71,
             "max": 85
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Roll 1d12 + half your cleric/paladin levels, subtract the number rolled from another religion (or multiple totaling your number rolled) and add it to yours.",
+        "bonus": "Roll 1d12 + half your cleric/paladin levels, subtract the number rolled from another religion's followers (or multiple totaling your number rolled) and add it to yours.",
         "roll": {
             "min": 96,
             "max": 105
