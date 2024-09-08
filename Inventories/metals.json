@@ -10,6 +10,51 @@
             "plane": "Material"
         },
         {
+            "name": "Rough Arcstone",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 220
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Hewn Arcstone",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 320
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Refined Arcstone",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 450,
+                "max": 475
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Polished Arcstone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 850,
+                "max": 1000
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Olympium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 1000,
+                "max": 1200
+            },
+            "plane": "Arborea"
+        },
+        {
             "name": "Silver",
             "rarity": "Common",
             "price": {
@@ -100,6 +145,15 @@
             "plane": "Underdark"
         },
         {
+            "name": "Lolth Cashmere",
+            "rarity": "Rare",
+            "price": {
+                "min": 375,
+                "max": 425
+            },
+            "plane": "Underdark"
+        },
+        {
             "name": "Void Ash",
             "rarity": "Uncommon",
             "price": {
@@ -114,6 +168,15 @@
             "price": {
                 "min": 220,
                 "max": 240
+            },
+            "plane": "Fire"
+        },
+        {
+            "name": "Volcanic Quartz",
+            "rarity": "Rare",
+            "price": {
+                "min": 375,
+                "max": 425
             },
             "plane": "Fire"
         },
@@ -289,11 +352,29 @@
             "plane": "Shadowfell"
         },
         {
+            "name": "Vilenite",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 390
+            },
+            "plane": "Shadowfell"
+        },
+        {
             "name": "Gravinite",
             "rarity": "Rare",
             "price": {
                 "min": 270,
                 "max": 310
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Tectonium",
+            "rarity": "Rare",
+            "price": {
+                "min": 375,
+                "max": 425
             },
             "plane": "Material"
         },
@@ -361,6 +442,15 @@
             "plane": "Arcadia"
         },
         {
+            "name": "Leviathan",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
+            },
+            "plane": "Arcadia"
+        },
+        {
             "name": "Cosmium",
             "rarity": "Very Rare",
             "price": {
@@ -415,6 +505,15 @@
             "plane": "Earth"
         },
         {
+            "name": "Mercurial Sludge",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
+            },
+            "plane": "9 Hells (Stygia)"
+        },
+        {
             "name": "Malcanthym",
             "rarity": "Very Rare",
             "price": {
@@ -438,6 +537,15 @@
             "price": {
                 "min": 440,
                 "max": 460
+            },
+            "plane": "Sigil"
+        },
+        {
+            "name": "Loadstone",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
             },
             "plane": "Sigil"
         },
@@ -467,6 +575,15 @@
                 "max": 475
             },
             "plane": "9 Hells (Cania)"
+        },
+        {
+            "name": "Orichalcum",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 435,
+                "max": 485
+            },
+            "plane": "Material"
         },
         {
             "name": "Mentallite",
@@ -539,6 +656,24 @@
                 "max": 900
             },
             "plane": "Limbo"
+        },
+        {
+            "name": "Unstable Uranium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 800,
+                "max": 900
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Stabilized Uranium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 1000,
+                "max": 1200
+            },
+            "plane": "Material"
         }
     ]
 }
