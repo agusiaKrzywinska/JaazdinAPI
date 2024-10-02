@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Speed up any Plant by 2 weeks.",
+        "bonus": "Immediately gain a harvest of one of your plants with 2 or less weeks of growth time left.",
         "roll": {
             "min": 116,
             "max": 125

@@ -14,7 +14,7 @@
         }
     },
     {
-        "bonus": "Immediately attempt a Gem Craft check with a 1 Lower DC.",
+        "bonus": "Immediately attempt a Gem Craft check with a 2 Lower DC.",
         "roll": {
             "min": 41,
             "max": 55
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Immediately attempt a Gem Craft check with a 2 Lower DC.",
+        "bonus": "Immediately attempt a Gem Craft check with a 4 Lower DC.",
         "roll": {
             "min": 96,
             "max": 105
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Immediately attempt a Gem Craft check with a 3 Lower DC.",
+        "bonus": "Immediately attempt a Gem Craft check with a 6 Lower DC.",
         "roll": {
             "min": 135,
             "max": 300

@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Learn of something in town.",
+        "bonus": "Attempt a research check on something in the town.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Learn of something in the country.",
+        "bonus": "Attempt a research check on something in the country.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Persuasion check to attempt to push a group's views.",
+        "bonus": "Attempt a Persuasion of DC 15, on a success you and one other Red Banner may increase their Wage Progression (the other may choose a job) by 1.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Learn of something abroad.",
+        "bonus": "Attempt a research check on something on the plane.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Persuasion check to attempt to push a city's views.",
+        "bonus": "Attempt a Persuasion of DC 15, on a success a boat of your choice comes 1 week faster (other then the trade fleet).",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Persuasion check to attempt to push a region's views.",
+        "bonus": "Attempt a Persuasion of DC 15, on a success a Place of Worship gains your Job Tier in followers.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Persuasion check to attempt to push a kingdom's views.",
+        "bonus": "You automatically succeed on the next Research Complication check.",
         "roll": {
             "min": 135,
             "max": 300

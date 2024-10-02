@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "Learn a Common potion recipe. If you know all potions recipes in that tier you can craft one instead.",
+        "bonus": "Learn a Common potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
         "roll": {
             "min": 21,
             "max": 40
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Learn an Uncommon potion recipe. If you know all potions recipes in that tier you can craft one instead.",
+        "bonus": "Learn an Uncommon potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Learn a Rare potion recipe. If you know all potions recipes in that tier you can craft one instead.",
+        "bonus": "Learn a Rare potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Learn a Very Rare potion recipe. If you know all potions recipes in that tier you can craft one instead.",
+        "bonus": "Learn a Very Rare potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
         "roll": {
             "min": 96,
             "max": 105
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Learn a Legendary potion recipe. If you know all potions recipes in that tier you can craft one instead.",
+        "bonus": "Learn a Legendary potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
         "roll": {
             "min": 135,
             "max": 300

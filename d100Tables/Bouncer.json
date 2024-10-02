@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Gain Inspiration for your next quest.",
+        "bonus": "You gain advantage on Initative rolls on your next quest.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Gain Advantage on Initiative for you next quest.",
+        "bonus": "The time it takes to learn a Weapon is reduced by 1 week.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Gain Advantage on the first attack you make per encounter on your next quest.",
+        "bonus": "You immediately gain progress towards a Weapon Form of your choice equal to your Job Tier.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Gain Advantage on STR Saves for you next quest.",
+        "bonus": "You gain advantage on all Stregnth checks on your next quest.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Gain Advantage the first time you attack a new creature on your next quest.",
+        "bonus": "The time it takes to learn a Weapon is reduced by your Prof bonus.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Gain +1 AC for your next quest.",
+        "bonus": "Gain +1 AC on your next quest.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "You gain the effects of Death Ward for your next quest.",
+        "bonus": "You immediately gain progress towards a Weapon Form of your choice equal to twice your Job Tier.",
         "roll": {
             "min": 135,
             "max": 300
