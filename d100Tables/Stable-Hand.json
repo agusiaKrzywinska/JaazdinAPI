@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "You gain advantage on your next taming check.",
+        "bonus": "You gain a +2 to your next training or taming check.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "You are offered a CR 1/4-CR1 creature, roll 1d20 to determine type.",
+        "bonus": "You are offered a CR 1/4-CR 1 creature, roll 1d20 to determine type.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,7 +28,7 @@
         }
     },
     {
-        "bonus": "Decrease the next taming or training DC you make by 2.",
+        "bonus": "One creature immediately gains your Proficiency bonus in training points.",
         "roll": {
             "min": 71,
             "max": 85
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Decrease the next taming or training DC you make by 4.",
+        "bonus": "One creature immediately gains twice your Proficiency bonus in training points.",
         "roll": {
             "min": 96,
             "max": 105
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Decrase the taming or training DC of one animal permanently by 1.",
+        "bonus": "You permanently gain +1 to training checks on one animal of your choice.",
         "roll": {
             "min": 135,
             "max": 300
