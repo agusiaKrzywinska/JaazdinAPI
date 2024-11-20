@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "One Cart is upgraded in wages.",
+        "bonus": "One Cart/Room is upgraded in wages.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Learn a local secret from a passenger.",
+        "bonus": "You can immediately make a research check local to Lake Solino.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Two carts are upgraded in wages.",
+        "bonus": "Two Carts/Rooms are upgraded in wages.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Learn a far away secret from a passenger.",
+        "bonus": "You can immediately make a research check local to the Collection.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Three carts are upgraded in wages.",
+        "bonus": "Three Carts/Rooms are upgraded in wages.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Four carts are upgraded in wages.",
+        "bonus": "Four Carts/Rooms are upgraded in wages.",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Learn an extremely hidden secrect from a passenger.",
+        "bonus": "You can immediately make a research check on anything.",
         "roll": {
             "min": 135,
             "max": 300

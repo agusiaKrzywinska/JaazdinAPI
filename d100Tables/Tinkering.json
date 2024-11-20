@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "Gain ADV on the next Blueprint Check you make.",
+        "bonus": "Gain advantage on next Blueprint or Invention crafting check you make.",
         "roll": {
             "min": 21,
             "max": 40
@@ -35,7 +35,7 @@
         }
     },
     {
-        "bonus": "You can immediately work on 1 Blueprint.",
+        "bonus": "You can immediately work on 1 Blueprint or Invention crafting check.",
         "roll": {
             "min": 86,
             "max": 95
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "You can immediately work on 2 Blueprints.",
+        "bonus": "You can immediately work on 2 Blueprint or Invention crafting checks.",
         "roll": {
             "min": 116,
             "max": 125
