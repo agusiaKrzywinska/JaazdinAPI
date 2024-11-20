@@ -4,16 +4,16 @@
             "name": "Assassin`s Blood",
             "rarity": "Common",
             "price": {
-                "min": 90,
-                "max": 110
+                "min": 40,
+                "max": 60
             }
         },
         {
             "name": "Truth Serum",
             "rarity": "Common",
             "price": {
-                "min": 110,
-                "max": 125
+                "min": 55,
+                "max": 75
             }
         },
         {
@@ -36,16 +36,16 @@
             "name": "Oil of Taggit",
             "rarity": "Uncommon",
             "price": {
-                "min": 125,
-                "max": 150
+                "min": 75,
+                "max": 95
             }
         },
         {
             "name": "Drow Poison",
             "rarity": "Uncommon",
             "price": {
-                "min": 130,
-                "max": 160
+                "min": 115,
+                "max": 125
             }
         },
         {
@@ -121,6 +121,14 @@
             }
         },
         {
+            "name": "Poison of Unfortune",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 370
+            }
+        },
+        {
             "name": "Wyvern Venom",
             "rarity": "Very Rare",
             "price": {
@@ -132,8 +140,8 @@
             "name": "Momento Poison",
             "rarity": "Very Rare",
             "price": {
-                "min": 325,
-                "max": 375
+                "min": 400,
+                "max": 450
             }
         },
         {
@@ -148,8 +156,8 @@
             "name": "Midnight Tears",
             "rarity": "Very Rare",
             "price": {
-                "min": 300,
-                "max": 350
+                "min": 600,
+                "max": 650
             }
         }
     ]

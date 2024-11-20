@@ -199,6 +199,15 @@
             "plane": "9 Hells (Avernus)"
         },
         {
+            "name": "Sanguinesteel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 230,
+                "max": 270
+            },
+            "plane": "9 Hells (Avernus)"
+        },
+        {
             "name": "Red Iron",
             "rarity": "Uncommon",
             "price": {
@@ -270,6 +279,7 @@
             },
             "plane": "Material"
         },
+
         {
             "name": "Gor`Shorot",
             "rarity": "Rare",
@@ -344,6 +354,15 @@
         },
         {
             "name": "Ashenite",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            },
+            "plane": "Shadowfell"
+        },
+        {
+            "name": "Ascendant Antimony",
             "rarity": "Rare",
             "price": {
                 "min": 290,
@@ -544,6 +563,15 @@
             "name": "Loadstone",
             "rarity": "Very Rare",
             "price": {
+                "min": 520,
+                "max": 550
+            },
+            "plane": "Sigil"
+        },
+        {
+            "name": "Loadstone",
+            "rarity": "Very Rare",
+            "price": {
                 "min": 500,
                 "max": 525
             },
@@ -564,6 +592,15 @@
             "price": {
                 "min": 465,
                 "max": 495
+            },
+            "plane": "9 Hells (Maladomini)"
+        },
+        {
+            "name": "Ruinous Platinum",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
             },
             "plane": "9 Hells (Maladomini)"
         },
