@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "One Cart/Room is upgraded in wages.",
+        "bonus": "One Cart is upgraded in wages.",
         "roll": {
             "min": 21,
             "max": 40
@@ -28,7 +28,7 @@
         }
     },
     {
-        "bonus": "Two Carts/Rooms are upgraded in wages.",
+        "bonus": "Two Carts are upgraded in wages.",
         "roll": {
             "min": 71,
             "max": 85
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Three Carts/Rooms are upgraded in wages.",
+        "bonus": "Three Carts are upgraded in wages.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Four Carts/Rooms are upgraded in wages.",
+        "bonus": "Four Carts are upgraded in wages.",
         "roll": {
             "min": 116,
             "max": 125
