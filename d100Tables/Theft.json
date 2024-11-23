@@ -72,7 +72,7 @@
     {
         "bonus": "Find a large Gemstone stash. (Roll 2d100+300gp)",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

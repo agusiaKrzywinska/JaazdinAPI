@@ -72,7 +72,7 @@
     {
         "bonus": "You can immediately make a research check on anything.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

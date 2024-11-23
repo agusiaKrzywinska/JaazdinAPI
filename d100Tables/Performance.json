@@ -72,7 +72,7 @@
     {
         "bonus": "Two players can add 1d10 to a d20 roll during this downtime.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

@@ -72,7 +72,7 @@
     {
         "bonus": "Immediately finish any construction project in town or make use of any building in town that requires downtime to use.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

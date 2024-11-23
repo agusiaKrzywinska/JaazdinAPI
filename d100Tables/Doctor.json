@@ -72,7 +72,7 @@
     {
         "bonus": "Grant Allies ADV on death saves on their next quest.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

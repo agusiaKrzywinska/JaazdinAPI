@@ -72,7 +72,7 @@
     {
         "bonus": "Learn a Legendary potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

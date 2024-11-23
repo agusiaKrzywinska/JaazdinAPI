@@ -72,7 +72,7 @@
     {
         "bonus": "Gain the highest possible d100 effect for your tier of any other profession.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

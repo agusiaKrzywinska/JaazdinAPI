@@ -72,7 +72,7 @@
     {
         "bonus": "You automatically succeed on the next Research Complication check.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

@@ -72,7 +72,7 @@
     {
         "bonus": "Gain 20% any purchase from the Docks (Stacks up to 100%)",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

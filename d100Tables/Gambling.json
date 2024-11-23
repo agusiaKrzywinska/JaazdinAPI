@@ -72,7 +72,7 @@
     {
         "bonus": "You can make a DC 30 Bet for 500 gp",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

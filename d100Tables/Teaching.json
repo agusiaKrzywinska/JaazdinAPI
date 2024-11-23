@@ -72,7 +72,7 @@
     {
         "bonus": "The next Proficiency learned takes 1 week to learn.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

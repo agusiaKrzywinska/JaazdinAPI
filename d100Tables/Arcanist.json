@@ -72,7 +72,7 @@
     {
         "bonus": "Make use of two built faculty's Tier 3 ability.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

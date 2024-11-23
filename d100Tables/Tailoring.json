@@ -72,7 +72,7 @@
     {
         "bonus": "Gain +40 progress towards an Enchanted Thread.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

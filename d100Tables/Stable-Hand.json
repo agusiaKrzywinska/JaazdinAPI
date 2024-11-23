@@ -72,7 +72,7 @@
     {
         "bonus": "You permanently gain +1 to training checks on one animal of your choice.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

@@ -72,7 +72,7 @@
     {
         "bonus": "Secure a shipment of Legendary goods, roll 1d4.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

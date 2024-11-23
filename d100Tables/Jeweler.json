@@ -72,7 +72,7 @@
     {
         "bonus": "Immediately attempt a Gem Craft check with a 6 Lower DC.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

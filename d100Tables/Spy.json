@@ -72,7 +72,7 @@
     {
         "bonus": "Gain 300% additional gold from your next quest reward.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

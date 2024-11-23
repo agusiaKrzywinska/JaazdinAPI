@@ -72,7 +72,7 @@
     {
         "bonus": "Learn a Very Rare Recipe or produce a Very Rare meal (no check but requires ingredients).",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

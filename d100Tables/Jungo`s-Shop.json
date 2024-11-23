@@ -72,7 +72,7 @@
     {
         "bonus": "Immediately make a Rare Appraisal roll with ADV.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

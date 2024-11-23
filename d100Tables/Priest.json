@@ -72,7 +72,7 @@
     {
         "bonus": "You and one ally gain the effect of Death Ward for the next quest you go on.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }

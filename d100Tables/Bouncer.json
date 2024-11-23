@@ -72,7 +72,7 @@
     {
         "bonus": "You immediately gain progress towards a Weapon Form of your choice equal to twice your Job Tier.",
         "roll": {
-            "min": 135,
+            "min": 136,
             "max": 300
         }
     }
