@@ -14,7 +14,7 @@
         }
     },
     {
-        "bonus": "ADV on Next Brewing or Cooks Check",
+        "bonus": "ADV on Next poisoner's Check",
         "roll": {
             "min": 41,
             "max": 55
