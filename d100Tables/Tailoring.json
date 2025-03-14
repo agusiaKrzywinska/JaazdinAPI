@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "You can make one Weaver's/Leatherworker's check or you can make a Weaver's/Leatherworker's and add your current Tier to the bonus, gain GP equal to twice the roll. ",
+        "bonus": "You can make one Weaver's/Leatherworker's check or you can make a Weaver's/Leatherworker's and add your current Tier to the bonus, gain GP equal to the roll. ",
         "roll": {
             "min": 21,
             "max": 40
@@ -28,7 +28,7 @@
         }
     },
     {
-        "bonus": "You can make one Weaver's/Leatherworker's check with advantage or you can make a Weaver's/Leatherworker's and add your current Tier to the bonus, gain GP equal to thrice the roll. ",
+        "bonus": "You can make one Weaver's/Leatherworker's check with advantage or you can make a Weaver's/Leatherworker's and add your current Tier to the bonus, gain GP equal to twice the roll. ",
         "roll": {
             "min": 71,
             "max": 85
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "You can make one Weaver's/Leatherworker's check with advantage and +5 or you can make a Weaver's/Leatherworker's and add your current Tier to the bonus, gain GP equal to four times the roll. ",
+        "bonus": "You can make one Weaver's/Leatherworker's check with advantage and +5 or you can make a Weaver's/Leatherworker's and add your current Tier to the bonus, gain GP equal to three times the roll. ",
         "roll": {
             "min": 96,
             "max": 105

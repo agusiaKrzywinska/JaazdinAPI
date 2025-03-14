@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Grant an ally Prof Bonus xd6 Temp HP next quest.",
+        "bonus": "Grant Allies adv on poison saves next quest",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "Grant all allies ADV on poison saves next quest.",
+        "bonus": "Grant an ally Prof Bonus Xd6 temp hp next quest.",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Grant two allies Prof Bonus xd6 Temp HP on the next quest.",
+        "bonus": "Grant two allies Prof Bonus Xd6 temp hp next quest.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Great an Antitoxin.",
+        "bonus": "Roll to create an Antitoxin with a bonus equal to your Job Tier.",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Grant all allies Prof Bonus xd6 Temp HP on their next quest.",
+        "bonus": "Grant all allies Prof Bonus Xd6 temp hp next quest",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Create a medical pouch.",
+        "bonus": "Create a Medical Pouch.",
         "roll": {
             "min": 116,
             "max": 125

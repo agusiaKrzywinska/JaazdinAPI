@@ -28,7 +28,7 @@
         }
     },
     {
-        "bonus": "One creature immediately gains your Proficiency bonus in training points.",
+        "bonus": "One creature immediately gains your Job Tier in training points.",
         "roll": {
             "min": 71,
             "max": 85
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "One creature immediately gains twice your Proficiency bonus in training points.",
+        "bonus": "One creature immediately gains twice your Job Tier in training points.",
         "roll": {
             "min": 96,
             "max": 105

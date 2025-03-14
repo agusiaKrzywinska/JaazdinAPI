@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "Learn a Common Recipe or produce a Common meal (no check but requires ingredients).",
+        "bonus": "Learn Common Recipe or produce common meal.",
         "roll": {
             "min": 21,
             "max": 40
@@ -28,7 +28,7 @@
         }
     },
     {
-        "bonus": "Learn an Uncommon Recipe or produce an Uncommon meal (no check but requires ingredients).",
+        "bonus": "Learn Uncommon Recipe or produce an Uncommon or lower meal.",
         "roll": {
             "min": 71,
             "max": 85
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Learn a Rare Recipe or produce a Rare meal (no check but requires ingredients).",
+        "bonus": "Learn Rare Recipe or produce a rare or lower meal.",
         "roll": {
             "min": 96,
             "max": 105
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Learn a Very Rare Recipe or produce a Very Rare meal (no check but requires ingredients).",
+        "bonus": "Learn Very Rare Recipe or produce a very rare or lower Meal.",
         "roll": {
             "min": 136,
             "max": 300

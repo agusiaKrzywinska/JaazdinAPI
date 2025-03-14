@@ -7,14 +7,14 @@
         }
     },
     {
-        "bonus": "Learn a Common potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
+        "bonus": "Learn Common Potion Recipe or make a check to brew a common potion.",
         "roll": {
             "min": 21,
             "max": 40
         }
     },
     {
-        "bonus": "ADV on your next Brewing check.",
+        "bonus": "ADV on Next Alchemy, Herbalist, or Brewers Check",
         "roll": {
             "min": 41,
             "max": 55
@@ -28,21 +28,21 @@
         }
     },
     {
-        "bonus": "Learn an Uncommon potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
+        "bonus": "Learn Uncommon Potion Recipe or make a check to brew an or lower uncommon potion.",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "Learn a Rare potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
+        "bonus": "Learn Rare Potion Recipe or make a check to brew a or lower rare potion",
         "roll": {
             "min": 86,
             "max": 95
         }
     },
     {
-        "bonus": "Learn a Very Rare potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
+        "bonus": "Learn Very Rare Potion recipe or make a check to brew a very rare or lower potion.",
         "roll": {
             "min": 96,
             "max": 105
@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "Immediately complete Brewing on a potion. No check is needed but all ingredients are required.",
+        "bonus": "Immediately Brew a Potion. (no check but needs ingredients)",
         "roll": {
             "min": 116,
             "max": 125
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Learn a Legendary potion recipe or meal. If you know all potions or meal recipes in that tier you can craft one instead.",
+        "bonus": "Learn Legendary Potion recipe or make a check to brew a legendary or lower potion.",
         "roll": {
             "min": 136,
             "max": 300

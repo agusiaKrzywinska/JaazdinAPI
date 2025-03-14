@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Learn Very Rare Poison Recipe or make a Poisoner's Tools check to brew a poison wtih +4.",
+        "bonus": "Learn Very Rare Poison Recipe or make a Poisoner's Tools check to brew a poison with +4.",
         "roll": {
             "min": 96,
             "max": 105

@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "You automatically succeed on the next Research Complication check.",
+        "bonus": "You automatically succeed on the next Research Complication and +10 on your next research check.",
         "roll": {
             "min": 136,
             "max": 300

@@ -7,7 +7,7 @@
         }
     },
     {
-        "bonus": "You gain advantage on Initative rolls on your next quest.",
+        "bonus": "You or an ally gain advantage on Initative rolls on your next quest.",
         "roll": {
             "min": 21,
             "max": 40
@@ -28,14 +28,14 @@
         }
     },
     {
-        "bonus": "You immediately gain progress towards a Weapon Form of your choice equal to your Job Tier.",
+        "bonus": "You immediately gain progress towards a Weapon Form of your choice equal to your Job Tier",
         "roll": {
             "min": 71,
             "max": 85
         }
     },
     {
-        "bonus": "You gain advantage on all Stregnth checks on your next quest.",
+        "bonus": "You or an ally gain advantage on all Strength checks on your next quest.",
         "roll": {
             "min": 86,
             "max": 95

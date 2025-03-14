@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Learn the Forging Conditions of one metal, if there are no unknown Forging Conditions, learn the uses of a metal instead. If there are neither forging condition or uses unknown, you can make one Smithing check.",
+        "bonus": "Learn Forging Conditions or Uses without a check.",
         "roll": {
             "min": 96,
             "max": 105

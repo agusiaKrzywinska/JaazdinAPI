@@ -14,7 +14,7 @@
         }
     },
     {
-        "bonus": "Lower the cost of yours or another Red Banner's Bounty by 10% (Can be held to up to 100% reduction).",
+        "bonus": "Lower the cost of yours or another Red Banner's Bounty by 10% (Can be held to up to 90% reduction).",
         "roll": {
             "min": 41,
             "max": 55
@@ -42,7 +42,7 @@
         }
     },
     {
-        "bonus": "Lower the cost of yours or another Red Banner's Bounty by 25% (Can be held to up to 100% reduction).",
+        "bonus": "Lower the cost of yours or another Red Banner's Bounty by 25% (Can be held to up to 90% reduction).",
         "roll": {
             "min": 96,
             "max": 105
@@ -70,7 +70,7 @@
         }
     },
     {
-        "bonus": "Gain 300% additional gold from your next quest reward.",
+        "bonus": "Gain double gold from your next quest reward.",
         "roll": {
             "min": 136,
             "max": 300
