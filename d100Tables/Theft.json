@@ -63,7 +63,7 @@
         }
     },
     {
-        "bonus": "Find a Rare Magic Item.",
+        "bonus": "Increase your Wage progression by +2.",
         "roll": {
             "min": 126,
             "max": 135
