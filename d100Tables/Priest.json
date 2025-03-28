@@ -56,7 +56,7 @@
         }
     },
     {
-        "bonus": "You and 1 ally gain the effects of one of the options of the Ceremony spell. This does not prevent them from benefiting from Ceremony in the future.",
+        "bonus": "Gain a tithe from your Religion equal to twice the number of followers in GP.",
         "roll": {
             "min": 116,
             "max": 125
