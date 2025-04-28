@@ -19,6 +19,15 @@
             "plane": "Material"
         },
         {
+            "name": "Aerogel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 210
+            },
+            "plane": "Air"
+        },
+        {
             "name": "Ash Quartz",
             "rarity": "Uncommon",
             "price": {
@@ -26,6 +35,15 @@
                 "max": 240
             },
             "plane": "Fire"
+        },
+        {
+            "name": "Astralite",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 200,
+                "max": 210
+            },
+            "plane": "The Astral Sea"
         },
         {
             "name": "Black Iron",
@@ -138,6 +156,24 @@
             "runesmithed": false
         },
         {
+            "name": "Pebbelum",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 210
+            },
+            "plane": "Earth"
+        },
+        {
+            "name": "Ratimber",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 210
+            },
+            "plane": "Feywilds"
+        },
+        {
             "name": "Razorwood",
             "rarity": "Uncommon",
             "price": {
@@ -191,42 +227,6 @@
                 "max": 210
             },
             "plane": "Far Realms"
-        },
-        {
-            "name": "Aerogel",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 210
-            },
-            "plane": "Air"
-        },
-        {
-            "name": "Pebbelum",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 210
-            },
-            "plane": "Earth"
-        },
-        {
-            "name": "Ratimber",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 210
-            },
-            "plane": "Feywilds"
-        },
-        {
-            "name": "Astralite",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 200,
-                "max": 210
-            },
-            "plane": "The Astral Sea"
         },
         {
             "name": "Adamantine",
@@ -346,6 +346,16 @@
                 "max": 360
             },
             "plane": "Far Realms"
+        },
+        {
+            "name": "Kirche Marble",
+            "rarity": "Rare",
+            "price": {
+                "min": 525,
+                "max": 625
+            },
+            "plane": "Valhalla",
+            "runesmithed": false
         },
         {
             "name": "Living Lava",
@@ -472,16 +482,6 @@
             "runesmithed": true
         },
         {
-            "name": "Wyrm Platinum",
-            "rarity": "Rare",
-            "price": {
-                "min": 450,
-                "max": 600
-            },
-            "plane": "Material",
-            "runesmithed": true
-        },
-        {
             "name": "Whisperium",
             "rarity": "Rare",
             "price": {
@@ -492,14 +492,14 @@
             "runesmithed": false
         },
         {
-            "name": "Kirche Marble",
+            "name": "Wyrm Platinum",
             "rarity": "Rare",
             "price": {
-                "min": 525,
-                "max": 625
+                "min": 450,
+                "max": 600
             },
-            "plane": "Valhalla",
-            "runesmithed": false
+            "plane": "Material",
+            "runesmithed": true
         },
         {
             "name": "Alacriver",
@@ -753,6 +753,16 @@
             "runesmithed": true
         },
         {
+            "name": "God Shell",
+            "rarity": "Legendary",
+            "price": {
+                "min": 1000,
+                "max": 1050
+            },
+            "plane": "The Far Realms",
+            "runesmithed": false
+        },
+        {
             "name": "Mockrium",
             "rarity": "Legendary",
             "price": {
@@ -817,16 +827,6 @@
             },
             "plane": "Material",
             "runesmithed": true
-        },
-        {
-            "name": "God Shell",
-            "rarity": "Legendary",
-            "price": {
-                "min": 1000,
-                "max": 1050
-            },
-            "plane": "The Far Realms",
-            "runesmithed": false
         }
     ]
 }
