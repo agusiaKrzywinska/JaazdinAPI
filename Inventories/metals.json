@@ -10,56 +10,74 @@
             "plane": "Material"
         },
         {
-            "name": "Rough Arcstone",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 180,
-                "max": 220
-            },
-            "plane": "The Weave"
-        },
-        {
-            "name": "Hewn Arcstone",
-            "rarity": "Rare",
-            "price": {
-                "min": 280,
-                "max": 320
-            },
-            "plane": "The Weave"
-        },
-        {
-            "name": "Refined Arcstone",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 450,
-                "max": 475
-            },
-            "plane": "The Weave"
-        },
-        {
-            "name": "Polished Arcstone",
-            "rarity": "Legendary",
-            "price": {
-                "min": 850,
-                "max": 1000
-            },
-            "plane": "The Weave"
-        },
-        {
-            "name": "Olympium",
-            "rarity": "Legendary",
-            "price": {
-                "min": 1000,
-                "max": 1200
-            },
-            "plane": "Arborea"
-        },
-        {
             "name": "Silver",
             "rarity": "Common",
             "price": {
                 "min": 5,
                 "max": 5
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Ash Quartz",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 220,
+                "max": 240
+            },
+            "plane": "Fire"
+        },
+        {
+            "name": "Black Iron",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 220
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Bloodsteel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 220
+            },
+            "plane": "9 Hells (Avernus)"
+        },
+        {
+            "name": "Chromed Silk",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 210
+            },
+            "plane": "Underdark"
+        },
+        {
+            "name": "Dawn Steel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 165,
+                "max": 195
+            },
+            "plane": "Elysium"
+        },
+        {
+            "name": "Demonic Wrought Iron",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 210
+            },
+            "plane": "Abyss"
+        },
+        {
+            "name": "Dragon`s Gold",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 190,
+                "max": 225
             },
             "plane": "Material"
         },
@@ -73,20 +91,11 @@
             "plane": "Astral Sea"
         },
         {
-            "name": "Mithral",
+            "name": "Gorgonite",
             "rarity": "Uncommon",
             "price": {
-                "min": 180,
-                "max": 220
-            },
-            "plane": "Material"
-        },
-        {
-            "name": "Black Iron",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 180,
-                "max": 220
+                "min": 175,
+                "max": 225
             },
             "plane": "Material"
         },
@@ -100,6 +109,15 @@
             "plane": "Material"
         },
         {
+            "name": "Mithral",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 220
+            },
+            "plane": "Material"
+        },
+        {
             "name": "Razorwood",
             "rarity": "Uncommon",
             "price": {
@@ -107,105 +125,6 @@
                 "max": 260
             },
             "plane": "Material"
-        },
-        {
-            "name": "Dragon`s Gold",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 225
-            },
-            "plane": "Material"
-        },
-        {
-            "name": "Gorgonite",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 175,
-                "max": 225
-            },
-            "plane": "Material"
-        },
-        {
-            "name": "Tinker`s Brass",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 165,
-                "max": 195
-            },
-            "plane": "Mechanius"
-        },
-        {
-            "name": "Chromed Silk",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 180,
-                "max": 210
-            },
-            "plane": "Underdark"
-        },
-        {
-            "name": "Lolth Cashmere",
-            "rarity": "Rare",
-            "price": {
-                "min": 375,
-                "max": 425
-            },
-            "plane": "Underdark"
-        },
-        {
-            "name": "Void Ash",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 210
-            },
-            "plane": "Far Realms"
-        },
-        {
-            "name": "Ash Quartz",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 220,
-                "max": 240
-            },
-            "plane": "Fire"
-        },
-        {
-            "name": "Volcanic Quartz",
-            "rarity": "Rare",
-            "price": {
-                "min": 375,
-                "max": 425
-            },
-            "plane": "Fire"
-        },
-        {
-            "name": "Demonic Wrought Iron",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 210
-            },
-            "plane": "Abyss"
-        },
-        {
-            "name": "Bloodsteel",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 190,
-                "max": 220
-            },
-            "plane": "9 Hells (Avernus)"
-        },
-        {
-            "name": "Sanguinesteel",
-            "rarity": "Uncommon",
-            "price": {
-                "min": 230,
-                "max": 270
-            },
-            "plane": "9 Hells (Avernus)"
         },
         {
             "name": "Red Iron",
@@ -217,22 +136,40 @@
             "plane": "9 Hells (Dis)"
         },
         {
-            "name": "Dawn Steel",
+            "name": "Rough Arcstone",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 180,
+                "max": 220
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Sanguinesteel",
+            "rarity": "Uncommon",
+            "price": {
+                "min": 230,
+                "max": 270
+            },
+            "plane": "9 Hells (Avernus)"
+        },
+        {
+            "name": "Tinker`s Brass",
             "rarity": "Uncommon",
             "price": {
                 "min": 165,
                 "max": 195
             },
-            "plane": "Elysium"
+            "plane": "Mechanius"
         },
         {
-            "name": "Arcanite",
-            "rarity": "Rare",
+            "name": "Void Ash",
+            "rarity": "Uncommon",
             "price": {
-                "min": 350,
-                "max": 410
+                "min": 190,
+                "max": 210
             },
-            "plane": "Material"
+            "plane": "Far Realms"
         },
         {
             "name": "Adamantine",
@@ -244,6 +181,123 @@
             "plane": "Material"
         },
         {
+            "name": "Arcanite",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 410
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Ascendant Antimony",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            },
+            "plane": "Shadowfell"
+        },
+        {
+            "name": "Ashenite",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            },
+            "plane": "Shadowfell"
+        },
+        {
+            "name": "Blazing Brass",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            },
+            "plane": "Fire"
+        },
+        {
+            "name": "Cosmic Ebony",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 390
+            },
+            "plane": "Far Realms"
+        },
+        {
+            "name": "Cubic Granite",
+            "rarity": "Rare",
+            "price": {
+                "min": 300,
+                "max": 340
+            },
+            "plane": "Acheron"
+        },
+        {
+            "name": "Ghost Steel",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            },
+            "plane": "Ethereal Plane"
+        },
+        {
+            "name": "Gor`Shorot",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            },
+            "plane": "Earth"
+        },
+        {
+            "name": "Gravinite",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Hewn Arcstone",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 320
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Illithidium",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 360
+            },
+            "plane": "Far Realms"
+        },
+        {
+            "name": "Living Lava",
+            "rarity": "Rare",
+            "price": {
+                "min": 290,
+                "max": 330
+            },
+            "plane": "9 Hells (Phlethegos)"
+        },
+        {
+            "name": "Lolth Cashmere",
+            "rarity": "Rare",
+            "price": {
+                "min": 375,
+                "max": 425
+            },
+            "plane": "Underdark"
+        },
+        {
             "name": "Mizzium",
             "rarity": "Rare",
             "price": {
@@ -251,6 +305,51 @@
                 "max": 425
             },
             "plane": "Material"
+        },
+        {
+            "name": "Pixiesteel",
+            "rarity": "Rare",
+            "price": {
+                "min": 280,
+                "max": 320
+            },
+            "plane": "Feywilds"
+        },
+        {
+            "name": "Prismatic Ice",
+            "rarity": "Rare",
+            "price": {
+                "min": 270,
+                "max": 310
+            },
+            "plane": "Water"
+        },
+        {
+            "name": "Putrid Lead",
+            "rarity": "Rare",
+            "price": {
+                "min": 300,
+                "max": 340
+            },
+            "plane": "9 Hells (Minauros)"
+        },
+        {
+            "name": "Radiant Garnet",
+            "rarity": "Rare",
+            "price": {
+                "min": 350,
+                "max": 390
+            },
+            "plane": "Earth"
+        },
+        {
+            "name": "Sanctified Ivory",
+            "rarity": "Rare",
+            "price": {
+                "min": 275,
+                "max": 315
+            },
+            "plane": "The Beastlands"
         },
         {
             "name": "Skaier",
@@ -271,104 +370,13 @@
             "plane": "Air"
         },
         {
-            "name": "Wyrm Platinum",
+            "name": "Tectonium",
             "rarity": "Rare",
             "price": {
-                "min": 450,
-                "max": 600
+                "min": 375,
+                "max": 425
             },
             "plane": "Material"
-        },
-
-        {
-            "name": "Gor`Shorot",
-            "rarity": "Rare",
-            "price": {
-                "min": 290,
-                "max": 330
-            },
-            "plane": "Earth"
-        },
-        {
-            "name": "Radiant Garnet",
-            "rarity": "Rare",
-            "price": {
-                "min": 350,
-                "max": 390
-            },
-            "plane": "Earth"
-        },
-        {
-            "name": "Blazing Brass",
-            "rarity": "Rare",
-            "price": {
-                "min": 270,
-                "max": 310
-            },
-            "plane": "Fire"
-        },
-        {
-            "name": "Ghost Steel",
-            "rarity": "Rare",
-            "price": {
-                "min": 270,
-                "max": 310
-            },
-            "plane": "Ethereal Plane"
-        },
-        {
-            "name": "Prismatic Ice",
-            "rarity": "Rare",
-            "price": {
-                "min": 270,
-                "max": 310
-            },
-            "plane": "Water"
-        },
-        {
-            "name": "Cubic Granite",
-            "rarity": "Rare",
-            "price": {
-                "min": 300,
-                "max": 340
-            },
-            "plane": "Acheron"
-        },
-        {
-            "name": "Illithidium",
-            "rarity": "Rare",
-            "price": {
-                "min": 350,
-                "max": 360
-            },
-            "plane": "Far Realms"
-        },
-        {
-            "name": "Pixiesteel",
-            "rarity": "Rare",
-            "price": {
-                "min": 280,
-                "max": 320
-            },
-            "plane": "Feywilds"
-        },
-        {
-            "name": "Ashenite",
-            "rarity": "Rare",
-            "price": {
-                "min": 290,
-                "max": 330
-            },
-            "plane": "Shadowfell"
-        },
-        {
-            "name": "Ascendant Antimony",
-            "rarity": "Rare",
-            "price": {
-                "min": 290,
-                "max": 330
-            },
-            "plane": "Shadowfell"
         },
         {
             "name": "Vilenite",
@@ -380,76 +388,40 @@
             "plane": "Shadowfell"
         },
         {
-            "name": "Gravinite",
-            "rarity": "Rare",
-            "price": {
-                "min": 270,
-                "max": 310
-            },
-            "plane": "Material"
-        },
-        {
-            "name": "Tectonium",
+            "name": "Volcanic Quartz",
             "rarity": "Rare",
             "price": {
                 "min": 375,
                 "max": 425
             },
+            "plane": "Fire"
+        },
+        {
+            "name": "Wyrm Platinum",
+            "rarity": "Rare",
+            "price": {
+                "min": 450,
+                "max": 600
+            },
             "plane": "Material"
         },
         {
-            "name": "Putrid Lead",
-            "rarity": "Rare",
-            "price": {
-                "min": 300,
-                "max": 340
-            },
-            "plane": "9 Hells (Minauros)"
-        },
-        {
-            "name": "Living Lava",
-            "rarity": "Rare",
-            "price": {
-                "min": 290,
-                "max": 330
-            },
-            "plane": "9 Hells (Phlethegos)"
-        },
-        {
-            "name": "Sanctified Ivory",
-            "rarity": "Rare",
-            "price": {
-                "min": 275,
-                "max": 315
-            },
-            "plane": "The Beastlands"
-        },
-        {
-            "name": "Cosmic Ebony",
-            "rarity": "Rare",
-            "price": {
-                "min": 350,
-                "max": 390
-            },
-            "plane": "Far Realms"
-        },
-        {
-            "name": "Vilified Ivory",
+            "name": "Alacriver",
             "rarity": "Very Rare",
             "price": {
-                "min": 500,
-                "max": 550
+                "min": 475,
+                "max": 500
             },
-            "plane": "The Beastlands"
+            "plane": "Arborea"
         },
         {
-            "name": "Devil`s Mercury",
+            "name": "Cobalt",
             "rarity": "Very Rare",
             "price": {
-                "min": 425,
+                "min": 450,
                 "max": 475
             },
-            "plane": "9 Hells (Stygia)"
+            "plane": "Material"
         },
         {
             "name": "Cold Titian",
@@ -457,15 +429,6 @@
             "price": {
                 "min": 440,
                 "max": 480
-            },
-            "plane": "Arcadia"
-        },
-        {
-            "name": "Leviathan",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 500,
-                "max": 525
             },
             "plane": "Arcadia"
         },
@@ -479,67 +442,22 @@
             "plane": "Astral Sea"
         },
         {
-            "name": "Alacriver",
+            "name": "Dark Platinum",
             "rarity": "Very Rare",
             "price": {
-                "min": 475,
-                "max": 500
+                "min": 465,
+                "max": 495
             },
-            "plane": "Arborea"
+            "plane": "9 Hells (Maladomini)"
         },
         {
-            "name": "Zuigni",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 430,
-                "max": 470
-            },
-            "plane": "Fire"
-        },
-        {
-            "name": "Cobalt",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 450,
-                "max": 475
-            },
-            "plane": "Material"
-        },
-        {
-            "name": "Prismium",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 525,
-                "max": 550
-            },
-            "plane": "Material"
-        },
-        {
-            "name": "Terrataium",
+            "name": "Devil`s Mercury",
             "rarity": "Very Rare",
             "price": {
                 "min": 425,
                 "max": 475
             },
-            "plane": "Earth"
-        },
-        {
-            "name": "Mercurial Sludge",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 500,
-                "max": 525
-            },
             "plane": "9 Hells (Stygia)"
-        },
-        {
-            "name": "Malcanthym",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 435,
-                "max": 485
-            },
-            "plane": "Elemental Chaos"
         },
         {
             "name": "Dirythym",
@@ -560,6 +478,15 @@
             "plane": "Sigil"
         },
         {
+            "name": "Leviathan",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
+            },
+            "plane": "Arcadia"
+        },
+        {
             "name": "Loadstone",
             "rarity": "Very Rare",
             "price": {
@@ -578,49 +505,13 @@
             "plane": "Sigil"
         },
         {
-            "name": "Warden`s Copper",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 460,
-                "max": 490
-            },
-            "plane": "9 Hells (Malbolge)"
-        },
-        {
-            "name": "Dark Platinum",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 465,
-                "max": 495
-            },
-            "plane": "9 Hells (Maladomini)"
-        },
-        {
-            "name": "Ruinous Platinum",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 500,
-                "max": 525
-            },
-            "plane": "9 Hells (Maladomini)"
-        },
-        {
-            "name": "Tytantium",
-            "rarity": "Very Rare",
-            "price": {
-                "min": 450,
-                "max": 475
-            },
-            "plane": "9 Hells (Cania)"
-        },
-        {
-            "name": "Orichalcum",
+            "name": "Malcanthym",
             "rarity": "Very Rare",
             "price": {
                 "min": 435,
                 "max": 485
             },
-            "plane": "Material"
+            "plane": "Elemental Chaos"
         },
         {
             "name": "Mentallite",
@@ -632,40 +523,94 @@
             "plane": "Far Realms"
         },
         {
-            "name": "Eternium",
-            "rarity": "Legendary",
+            "name": "Mercurial Sludge",
+            "rarity": "Very Rare",
             "price": {
-                "min": 1000,
-                "max": 1200
+                "min": 500,
+                "max": 525
             },
-            "plane": "Astral Sea"
+            "plane": "9 Hells (Stygia)"
         },
         {
-            "name": "Clockwork Bronze",
-            "rarity": "Legendary",
+            "name": "Orichalcum",
+            "rarity": "Very Rare",
             "price": {
-                "min": 750,
-                "max": 825
+                "min": 435,
+                "max": 485
             },
-            "plane": "Mechanus"
+            "plane": "Material"
         },
         {
-            "name": "Celestial Gold",
-            "rarity": "Legendary",
+            "name": "Prismium",
+            "rarity": "Very Rare",
             "price": {
-                "min": 800,
-                "max": 900
+                "min": 525,
+                "max": 550
             },
-            "plane": "Mount Celestia"
+            "plane": "Material"
         },
         {
-            "name": "Soulsteel",
-            "rarity": "Legendary",
+            "name": "Refined Arcstone",
+            "rarity": "Very Rare",
             "price": {
-                "min": 750,
-                "max": 825
+                "min": 450,
+                "max": 475
             },
-            "plane": "Shadowfell"
+            "plane": "The Weave"
+        },
+        {
+            "name": "Ruinous Platinum",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 525
+            },
+            "plane": "9 Hells (Maladomini)"
+        },
+        {
+            "name": "Terrataium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 425,
+                "max": 475
+            },
+            "plane": "Earth"
+        },
+        {
+            "name": "Tytantium",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 450,
+                "max": 475
+            },
+            "plane": "9 Hells (Cania)"
+        },
+        {
+            "name": "Vilified Ivory",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 500,
+                "max": 550
+            },
+            "plane": "The Beastlands"
+        },
+        {
+            "name": "Warden`s Copper",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 460,
+                "max": 490
+            },
+            "plane": "9 Hells (Malbolge)"
+        },
+        {
+            "name": "Zuigni",
+            "rarity": "Very Rare",
+            "price": {
+                "min": 430,
+                "max": 470
+            },
+            "plane": "Fire"
         },
         {
             "name": "Asmodeum",
@@ -677,13 +622,31 @@
             "plane": "9 Hells (Nessus)"
         },
         {
-            "name": "Truemetal",
+            "name": "Celestial Gold",
             "rarity": "Legendary",
             "price": {
-                "min": 825,
-                "max": 875
+                "min": 800,
+                "max": 900
             },
-            "plane": "Positive Energy Plane"
+            "plane": "Mount Celestia"
+        },
+        {
+            "name": "Clockwork Bronze",
+            "rarity": "Legendary",
+            "price": {
+                "min": 750,
+                "max": 825
+            },
+            "plane": "Mechanus"
+        },
+        {
+            "name": "Eternium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 1000,
+                "max": 1200
+            },
+            "plane": "Astral Sea"
         },
         {
             "name": "Mockrium",
@@ -695,13 +658,31 @@
             "plane": "Limbo"
         },
         {
-            "name": "Unstable Uranium",
+            "name": "Olympium",
             "rarity": "Legendary",
             "price": {
-                "min": 800,
-                "max": 900
+                "min": 1000,
+                "max": 1200
             },
-            "plane": "Material"
+            "plane": "Arborea"
+        },
+        {
+            "name": "Polished Arcstone",
+            "rarity": "Legendary",
+            "price": {
+                "min": 850,
+                "max": 1000
+            },
+            "plane": "The Weave"
+        },
+        {
+            "name": "Soulsteel",
+            "rarity": "Legendary",
+            "price": {
+                "min": 750,
+                "max": 825
+            },
+            "plane": "Shadowfell"
         },
         {
             "name": "Stabilized Uranium",
@@ -709,6 +690,24 @@
             "price": {
                 "min": 1000,
                 "max": 1200
+            },
+            "plane": "Material"
+        },
+        {
+            "name": "Truemetal",
+            "rarity": "Legendary",
+            "price": {
+                "min": 825,
+                "max": 875
+            },
+            "plane": "Positive Energy Plane"
+        },
+        {
+            "name": "Unstable Uranium",
+            "rarity": "Legendary",
+            "price": {
+                "min": 800,
+                "max": 900
             },
             "plane": "Material"
         }

@@ -80,7 +80,7 @@
             ]
         },
         {
-            "name": "Plate",
+            "name": "Platemail",
             "plates": 8,
             "price": 1500,
             "invalidMetals": [
