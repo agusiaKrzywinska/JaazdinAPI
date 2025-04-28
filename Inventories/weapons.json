@@ -287,6 +287,24 @@
             "plates": 3,
             "price": 5,
             "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
+        },
+        {
+            "name": "Katana",
+            "plates": 3,
+            "price": 30,
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
+        },
+        {
+            "name": "Throwing Star (10)",
+            "plates": 3,
+            "price": 0.5,
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
+        },
+        {
+            "name": "Sai",
+            "plates": 2,
+            "price": 20,
+            "invalidMetals": ["Ash Quartz","Cubic Granite", "Ghost Steel"]
         }
     ]
 }
