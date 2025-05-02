@@ -6,7 +6,8 @@
             "price": 45,
             "invalidMetals": [
                 "Ash Quartz",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Pebbelum"
             ]
         },
         {
@@ -16,7 +17,8 @@
             "invalidMetals": [
                 "Ash Quartz",
                 "Chromed Silk",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -26,7 +28,8 @@
             "invalidMetals": [
                 "Ash Quartz",
                 "Chromed Silk",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -36,7 +39,8 @@
             "invalidMetals": [
                 "Ash Quartz",
                 "Chromed Silk",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -46,7 +50,8 @@
             "invalidMetals": [
                 "Ash Quartz",
                 "Chromed Silk",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -56,7 +61,8 @@
             "invalidMetals": [
                 "Chromed Silk",
                 "Alacriver",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -66,7 +72,8 @@
             "invalidMetals": [
                 "Chromed Silk",
                 "Alacriver",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -76,7 +83,8 @@
             "invalidMetals": [
                 "Chromed Silk",
                 "Alacriver",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -86,7 +94,8 @@
             "invalidMetals": [
                 "Chromed Silk",
                 "Alacriver",
-                "Cubic Granite"
+                "Cubic Granite",
+                "Hunter's Iron"
             ]
         },
         {
@@ -95,7 +104,10 @@
             "price": 10,
             "invalidMetals": [
                 "Ash Quartz",
-                "Chromed Silk"
+                "Chromed Silk",
+                "Ratimber",
+                "Hunter's Iron",
+                "Soul Steel"
             ]
         }
     ]
