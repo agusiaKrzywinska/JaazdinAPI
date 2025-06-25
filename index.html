@@ -7,6 +7,63 @@
 </head>
 
 <body>
+    <h2>d100 Job Reward</h2>
+    <label for="jobtype">Job Type:</label>
+    <select id="jobtype"></select>
+    <br>
+
+    <label for="tier">Tier (3-30):</label>
+    <input type="number" id="tier" min="3" max="30" value="7">
+    <br>
+
+    <label for="roll">Roll (1-100):</label>
+    <input type="number" id="roll" min="1" max="100" value="1">
+    <br>
+
+    <label for="withBoats">
+        <input type="checkbox" id="withBoats">
+        Check with boats
+    </label>
+    <br>
+
+    <button onclick="getProfessionBonus()">Get Bonus</button>
+    <br><br>
+    <div id="result"></div>
+
+    <script>
+        // Fetch job types from the server and populate the dropdown
+        fetch('Commands/listJobs.php')
+            .then(response => response.json())
+            .then(jobs => {
+                const select = document.getElementById('jobtype');
+                jobs.forEach(job => {
+                    const option = document.createElement('option');
+                    option.value = job;
+                    option.textContent = job;
+                    select.appendChild(option);
+                });
+            });
+
+        function getProfessionBonus() {
+            const job = document.getElementById('jobtype').value;
+            const tier = document.getElementById('tier').value;
+            const roll = document.getElementById('roll').value;
+            const withBoats = document.getElementById('withBoats').checked;
+
+            const endpoint = withBoats
+                ? 'Commands/ProfessionRoll.php'
+                : 'Commands/ProfessionRollNoBoat.php';
+
+            fetch(`${endpoint}?job=${encodeURIComponent(job)}&tier=${tier}&roll=${roll}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerText = data.message;
+                })
+                .catch(error => {
+                    document.getElementById('result').innerText = 'Error: ' + error;
+                });
+        }
+    </script>
 </body>
 
 </html>
